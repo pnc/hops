@@ -1,9 +1,12 @@
 #import <Foundation/Foundation.h>
 
+@class PCProfile;
+
 typedef NS_ENUM(NSInteger, PCProfileParserError) {
   PCProfileParserErrorUnknown = 9000,
   PCProfileParserErrorUnexpectedEndOfStream,
-  PCProfileParserErrorCorruptProfile
+  PCProfileParserErrorCorruptProfile,
+  PCProfileParserErrorUnexpectedPropertyListType
 };
 
 @interface PCProfileParser : NSObject
@@ -11,5 +14,5 @@ typedef NS_ENUM(NSInteger, PCProfileParserError) {
 - (instancetype)initWithContentsOfURL:(NSURL *)url;
 - (BOOL)parse:(NSError **)error;
 
-@property (readonly) id profile;
+@property (readonly) PCProfile *profile;
 @end

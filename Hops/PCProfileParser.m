@@ -1,5 +1,6 @@
 #import "PCProfileParser.h"
 #import <Security/Security.h>
+#import "PCMutableProfile.h"
 
 static NSString* const PCProfileParserErrorDomain = @"PCProfileParserError";
 
@@ -27,19 +28,21 @@ static NSString* const PCProfileParserErrorDomain = @"PCProfileParserError";
   [self.inputStream open];
   NSData *data = [self loadMessageDataFromStream:self.inputStream error:error];
   if (data) {
-    _profile = data;
+    _profile = [self.class profileFromData:data error:error];
   }
   [self.inputStream close];
-  return !!data;
+  return !!_profile;
 }
 
-- (NSData *)loadMessageDataFromStream:(NSInputStream *)stream error:(NSError **)error {
+#pragma mark - Read cryptographic message
+
+- (NSData *)loadMessageDataFromStream:(NSInputStream *)stream error:(NSError *__autoreleasing *)error {
   NSData *data = nil;
   OSStatus result = noErr;
   CMSDecoderRef decoder = NULL;
   CMSDecoderCreate(&decoder);
 
-  if ([self fillDecoder:decoder fromStream:stream error:error]) {
+  if ([self.class fillDecoder:decoder fromStream:stream error:error]) {
     result = CMSDecoderFinalizeMessage(decoder);
     if (noErr == result) {
       CFDataRef content = NULL;
@@ -75,16 +78,49 @@ static NSString* const PCProfileParserErrorDomain = @"PCProfileParserError";
   return data;
 }
 
-- (BOOL)fillDecoder:(CMSDecoderRef)decoder fromStream:(NSInputStream *)stream error:(NSError **)error {
++ (BOOL)fillDecoder:(CMSDecoderRef)decoder fromStream:(NSInputStream *)stream error:(NSError *__autoreleasing *)error {
   uint8_t buffer[4096];
   BOOL anyData = NO;
-  while ([self.inputStream hasBytesAvailable]) {
-    NSInteger result = [self.inputStream read:buffer maxLength:4096];
+  while ([stream hasBytesAvailable]) {
+    NSInteger result = [stream read:buffer maxLength:4096];
     if (result > 0) {
       CMSDecoderUpdateMessage(decoder, buffer, result);
     }
     anyData = YES;
   }
   return anyData;
+}
+
+#pragma mark - Interpret plist
++ (PCProfile *)profileFromData:(NSData *)data error:(NSError *__autoreleasing *)error {
+  PCProfile *profile = nil;
+  NSPropertyListFormat format;
+  id propertyList = [NSPropertyListSerialization
+                     propertyListWithData:data
+                     options:0
+                     format:&format
+                     error:error];
+  if (propertyList && [propertyList isKindOfClass:[NSDictionary class]]) {
+    profile = [self.class profileFromDictionary:propertyList error:error];
+  } else if (propertyList) {
+    *error = [NSError errorWithDomain:PCProfileParserErrorDomain
+                                 code:PCProfileParserErrorUnexpectedPropertyListType
+                             userInfo:nil];
+  } else {
+    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    if (*error) {
+      [userInfo setObject:*error forKey:NSUnderlyingErrorKey];
+    }
+    *error = [NSError errorWithDomain:PCProfileParserErrorDomain
+                                 code:PCProfileParserErrorUnknown
+                             userInfo:userInfo];
+  }
+  return profile;
+}
+
++ (PCProfile *)profileFromDictionary:(NSDictionary *)dictionary error:(NSError *__autoreleasing *)error {
+  PCMutableProfile *profile = [PCMutableProfile new];
+  profile.provisionedDevices = [dictionary objectForKey:@"ProvisionedDevices"];
+  return profile;
 }
 @end

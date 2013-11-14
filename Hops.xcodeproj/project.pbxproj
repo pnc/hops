@@ -11,6 +11,13 @@
 		4A46B15F183310B100650C3A /* profile-valid.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B15E183310B100650C3A /* profile-valid.mobileprovision */; };
 		4A46B1611833116700650C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
 		4A46B1621833126800650C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
+		4A46B16618347E3200650C3A /* PCProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16418347E3200650C3A /* PCProfile.h */; };
+		4A46B16718347E3200650C3A /* PCProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16518347E3200650C3A /* PCProfile.m */; };
+		4A46B16818347E3200650C3A /* PCProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16518347E3200650C3A /* PCProfile.m */; };
+		4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16918347EA200650C3A /* PCMutableProfile.h */; };
+		4A46B16C18347EA200650C3A /* PCMutableProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16A18347EA200650C3A /* PCMutableProfile.m */; };
+		4A46B16D18347EA200650C3A /* PCMutableProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16A18347EA200650C3A /* PCMutableProfile.m */; };
+		4A46B16F183483CE00650C3A /* plist-root-array.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B16E183483CE00650C3A /* plist-root-array.plist */; };
 		4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E837183303F000A5D813 /* QuickLook.framework */; };
 		4AB2E83A183303F000A5D813 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E839183303F000A5D813 /* ApplicationServices.framework */; };
 		4AB2E83C183303F000A5D813 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83B183303F000A5D813 /* CoreServices.framework */; };
@@ -41,6 +48,12 @@
 		4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "profile-corrupt.mobileprovision"; sourceTree = "<group>"; };
 		4A46B15E183310B100650C3A /* profile-valid.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = "profile-valid.mobileprovision"; sourceTree = "<group>"; };
 		4A46B1601833116700650C3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4A46B16418347E3200650C3A /* PCProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCProfile.h; sourceTree = "<group>"; };
+		4A46B16518347E3200650C3A /* PCProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCProfile.m; sourceTree = "<group>"; };
+		4A46B16918347EA200650C3A /* PCMutableProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMutableProfile.h; sourceTree = "<group>"; };
+		4A46B16A18347EA200650C3A /* PCMutableProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMutableProfile.m; sourceTree = "<group>"; };
+		4A46B16E183483CE00650C3A /* plist-root-array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "plist-root-array.plist"; sourceTree = "<group>"; };
+		4A46B170183484B700650C3A /* PCProfileParser_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCProfileParser_Private.h; sourceTree = "<group>"; };
 		4AB2E834183303F000A5D813 /* Hops.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hops.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB2E837183303F000A5D813 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4AB2E839183303F000A5D813 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -92,8 +105,20 @@
 			children = (
 				4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */,
 				4A46B15E183310B100650C3A /* profile-valid.mobileprovision */,
+				4A46B16E183483CE00650C3A /* plist-root-array.plist */,
 			);
 			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		4A46B16318347E2400650C3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A46B16418347E3200650C3A /* PCProfile.h */,
+				4A46B16518347E3200650C3A /* PCProfile.m */,
+				4A46B16918347EA200650C3A /* PCMutableProfile.h */,
+				4A46B16A18347EA200650C3A /* PCMutableProfile.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		4AB2E829183303F000A5D813 = {
@@ -131,6 +156,7 @@
 		4AB2E83F183303F000A5D813 /* Hops */ = {
 			isa = PBXGroup;
 			children = (
+				4A46B16318347E2400650C3A /* Model */,
 				4AE3E62318330604008B6924 /* Parser */,
 				4AB2E845183303F000A5D813 /* GenerateThumbnailForURL.c */,
 				4AB2E847183303F000A5D813 /* GeneratePreviewForURL.c */,
@@ -173,6 +199,7 @@
 		4AE3E62318330604008B6924 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				4A46B170183484B700650C3A /* PCProfileParser_Private.h */,
 				4AE3E6241833063F008B6924 /* PCProfileParser.h */,
 				4AE3E6251833063F008B6924 /* PCProfileParser.m */,
 			);
@@ -187,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE3E6261833063F008B6924 /* PCProfileParser.h in Headers */,
+				4A46B16618347E3200650C3A /* PCProfile.h in Headers */,
+				4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE3E61A183305CC008B6924 /* InfoPlist.strings in Resources */,
+				4A46B16F183483CE00650C3A /* plist-root-array.plist in Resources */,
 				4A46B15F183310B100650C3A /* profile-valid.mobileprovision in Resources */,
 				4A46B15D18330C6400650C3A /* profile-corrupt.mobileprovision in Resources */,
 			);
@@ -300,6 +330,8 @@
 			files = (
 				4AB2E846183303F000A5D813 /* GenerateThumbnailForURL.c in Sources */,
 				4AE3E6271833063F008B6924 /* PCProfileParser.m in Sources */,
+				4A46B16718347E3200650C3A /* PCProfile.m in Sources */,
+				4A46B16C18347EA200650C3A /* PCMutableProfile.m in Sources */,
 				4AB2E848183303F000A5D813 /* GeneratePreviewForURL.c in Sources */,
 				4AB2E84A183303F000A5D813 /* main.c in Sources */,
 			);
@@ -310,7 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE3E62B18330A19008B6924 /* PCProfileParser.m in Sources */,
+				4A46B16818347E3200650C3A /* PCProfile.m in Sources */,
 				4AE3E62918330684008B6924 /* PCProfileParserTest.m in Sources */,
+				4A46B16D18347EA200650C3A /* PCMutableProfile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
