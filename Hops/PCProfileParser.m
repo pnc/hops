@@ -120,7 +120,15 @@ static NSString* const PCProfileParserErrorDomain = @"PCProfileParserError";
 
 + (PCProfile *)profileFromDictionary:(NSDictionary *)dictionary error:(NSError *__autoreleasing *)error {
   PCMutableProfile *profile = [PCMutableProfile new];
+  profile.name = [dictionary objectForKey:@"Name"];
   profile.provisionedDevices = [dictionary objectForKey:@"ProvisionedDevices"];
+  NSDictionary *entitlements = [dictionary objectForKey:@"Entitlements"];
+  if (entitlements && [entitlements isKindOfClass:[NSDictionary class]]) {
+    profile.applicationIdentifier = [entitlements objectForKey:@"application-identifier"];
+    profile.applePushServiceEnvironment = [entitlements objectForKey:@"aps-environment"];
+    profile.getTaskAllow = [entitlements objectForKey:@"get-task-allow"];
+    profile.keychainAccessGroups = [entitlements objectForKey:@"keychain-access-groups"];
+  }
   return profile;
 }
 @end
