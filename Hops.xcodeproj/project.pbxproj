@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A46B15D18330C6400650C3A /* profile-corrupt.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */; };
 		4A46B15F183310B100650C3A /* profile-valid.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B15E183310B100650C3A /* profile-valid.mobileprovision */; };
+		4A46B1611833116700650C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
+		4A46B1621833126800650C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
 		4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E837183303F000A5D813 /* QuickLook.framework */; };
 		4AB2E83A183303F000A5D813 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E839183303F000A5D813 /* ApplicationServices.framework */; };
 		4AB2E83C183303F000A5D813 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83B183303F000A5D813 /* CoreServices.framework */; };
@@ -38,6 +40,7 @@
 /* Begin PBXFileReference section */
 		4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "profile-corrupt.mobileprovision"; sourceTree = "<group>"; };
 		4A46B15E183310B100650C3A /* profile-valid.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = "profile-valid.mobileprovision"; sourceTree = "<group>"; };
+		4A46B1601833116700650C3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4AB2E834183303F000A5D813 /* Hops.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hops.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB2E837183303F000A5D813 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4AB2E839183303F000A5D813 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A46B1611833116700650C3A /* Security.framework in Frameworks */,
 				4AB2E83E183303F000A5D813 /* CoreFoundation.framework in Frameworks */,
 				4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */,
 				4AB2E83C183303F000A5D813 /* CoreServices.framework in Frameworks */,
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A46B1621833126800650C3A /* Security.framework in Frameworks */,
 				4AE3E614183305CC008B6924 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +118,7 @@
 		4AB2E836183303F000A5D813 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A46B1601833116700650C3A /* Security.framework */,
 				4AB2E837183303F000A5D813 /* QuickLook.framework */,
 				4AB2E839183303F000A5D813 /* ApplicationServices.framework */,
 				4AB2E83B183303F000A5D813 /* CoreServices.framework */,

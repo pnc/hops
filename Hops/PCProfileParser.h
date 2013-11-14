@@ -1,7 +1,8 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, PCProfileParserError) {
-  PCProfileParserErrorUnexpectedEndOfStream = 9000,
+  PCProfileParserErrorUnknown = 9000,
+  PCProfileParserErrorUnexpectedEndOfStream,
   PCProfileParserErrorCorruptProfile
 };
 

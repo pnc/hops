@@ -49,7 +49,7 @@
   NSError *error = nil;
   BOOL result = [parser parse:&error];
 
-  XCTAssertTrue(result, @"Expected parsing valid fixture to succeed");
+  XCTAssertTrue(result, @"Expected parsing valid fixture to succeed, instead: %@", error);
   XCTAssertNotNil(parser.profile, @"Expected a parsed profile result");
 }
 
