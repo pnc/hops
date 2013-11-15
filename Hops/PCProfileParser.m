@@ -79,14 +79,10 @@
 + (BOOL)fillDecoder:(CMSDecoderRef)decoder fromStream:(NSInputStream *)stream error:(NSError *__autoreleasing *)error {
   uint8_t buffer[4096];
   BOOL anyData = NO;
-  while ([stream hasBytesAvailable]) {
-    NSInteger result = [stream read:buffer maxLength:4096];
-    if (result > 0) {
-      anyData = YES;
-      CMSDecoderUpdateMessage(decoder, buffer, result);
-    } else {
-      break;
-    }
+  NSInteger result = 0;
+  while ((result = [stream read:buffer maxLength:4096]) > 0) {
+    anyData = YES;
+    CMSDecoderUpdateMessage(decoder, buffer, result);
   }
   return anyData;
 }
