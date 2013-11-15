@@ -2,8 +2,6 @@
 #import <Security/Security.h>
 #import "PCMutableProfile.h"
 
-static NSString* const PCProfileParserErrorDomain = @"PCProfileParserError";
-
 @interface PCProfileParser ()
 @property NSInputStream *inputStream;
 @end

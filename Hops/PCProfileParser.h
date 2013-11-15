@@ -2,6 +2,8 @@
 
 @class PCProfile;
 
+static NSString* const PCProfileParserErrorDomain = @"PCProfileParserError";
+
 typedef NS_ENUM(NSInteger, PCProfileParserError) {
   PCProfileParserErrorUnknown = 9000,
   PCProfileParserErrorUnexpectedEndOfStream,

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A34F97C1835C0000084D695 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97B1835C0000084D695 /* libzipzap.a */; };
+		4A34F97E1835C01D0084D695 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97D1835C01C0084D695 /* libc++.dylib */; };
+		4A34F9801835C0280084D695 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97F1835C0280084D695 /* libz.dylib */; };
+		4A34F9821835C0930084D695 /* PCArchiveUnpackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9811835C0930084D695 /* PCArchiveUnpackerTest.m */; };
+		4A34F9851835C1030084D695 /* PCArchiveUnpacker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */; };
+		4A34F9861835C1030084D695 /* PCArchiveUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */; };
+		4A34F9871835C1030084D695 /* PCArchiveUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */; };
+		4A34F9891835C11A0084D695 /* ipa-corrupt.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F9881835C11A0084D695 /* ipa-corrupt.ipa */; };
+		4A34F98B1835C4B60084D695 /* ipa-no-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F98A1835C4B60084D695 /* ipa-no-profile.ipa */; };
+		4A34F98C1835C7350084D695 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97F1835C0280084D695 /* libz.dylib */; };
+		4A34F98D1835C73B0084D695 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97D1835C01C0084D695 /* libc++.dylib */; };
+		4A34F98F1835C7440084D695 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F98E1835C7440084D695 /* libzipzap.a */; };
+		4A34F9911835C75F0084D695 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F9901835C75F0084D695 /* Foundation.framework */; };
+		4A34F9921835C76C0084D695 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E839183303F000A5D813 /* ApplicationServices.framework */; };
+		4A34F9961835CDE00084D695 /* ipa-valid-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F9951835CDE00084D695 /* ipa-valid-profile.ipa */; };
 		4A46B15D18330C6400650C3A /* profile-corrupt.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */; };
 		4A46B15F183310B100650C3A /* profile-valid.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B15E183310B100650C3A /* profile-valid.mobileprovision */; };
 		4A46B1611833116700650C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
@@ -45,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A34F97B1835C0000084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libzipzap.a; path = zipzap/build/Debug/libzipzap.a; sourceTree = "<group>"; };
+		4A34F97D1835C01C0084D695 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4A34F97F1835C0280084D695 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4A34F9811835C0930084D695 /* PCArchiveUnpackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchiveUnpackerTest.m; sourceTree = "<group>"; };
+		4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCArchiveUnpacker.h; sourceTree = "<group>"; };
+		4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchiveUnpacker.m; sourceTree = "<group>"; };
+		4A34F9881835C11A0084D695 /* ipa-corrupt.ipa */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "ipa-corrupt.ipa"; sourceTree = "<group>"; };
+		4A34F98A1835C4B60084D695 /* ipa-no-profile.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-no-profile.ipa"; sourceTree = "<group>"; };
+		4A34F98E1835C7440084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = "../../Library/Developer/Xcode/DerivedData/Hops-fzrjeswtxiuqnwajjmqrektwaauc/Build/Products/Debug/libzipzap.a"; sourceTree = "<group>"; };
+		4A34F9901835C75F0084D695 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A34F9951835CDE00084D695 /* ipa-valid-profile.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-valid-profile.ipa"; sourceTree = "<group>"; };
 		4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "profile-corrupt.mobileprovision"; sourceTree = "<group>"; };
 		4A46B15E183310B100650C3A /* profile-valid.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = "profile-valid.mobileprovision"; sourceTree = "<group>"; };
 		4A46B1601833116700650C3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -80,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A34F9801835C0280084D695 /* libz.dylib in Frameworks */,
+				4A34F97E1835C01D0084D695 /* libc++.dylib in Frameworks */,
+				4A34F97C1835C0000084D695 /* libzipzap.a in Frameworks */,
 				4A46B1611833116700650C3A /* Security.framework in Frameworks */,
 				4AB2E83E183303F000A5D813 /* CoreFoundation.framework in Frameworks */,
 				4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */,
@@ -92,6 +121,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A34F9921835C76C0084D695 /* ApplicationServices.framework in Frameworks */,
+				4A34F9911835C75F0084D695 /* Foundation.framework in Frameworks */,
+				4A34F98F1835C7440084D695 /* libzipzap.a in Frameworks */,
+				4A34F98D1835C73B0084D695 /* libc++.dylib in Frameworks */,
+				4A34F98C1835C7350084D695 /* libz.dylib in Frameworks */,
 				4A46B1621833126800650C3A /* Security.framework in Frameworks */,
 				4AE3E614183305CC008B6924 /* XCTest.framework in Frameworks */,
 			);
@@ -100,14 +134,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A34F97A1835BE120084D695 /* Unpacker */ = {
+			isa = PBXGroup;
+			children = (
+				4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */,
+				4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */,
+			);
+			name = Unpacker;
+			sourceTree = "<group>";
+		};
 		4A46B15B18330C5100650C3A /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
 				4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */,
 				4A46B15E183310B100650C3A /* profile-valid.mobileprovision */,
 				4A46B16E183483CE00650C3A /* plist-root-array.plist */,
+				4A34F9881835C11A0084D695 /* ipa-corrupt.ipa */,
+				4A34F98A1835C4B60084D695 /* ipa-no-profile.ipa */,
+				4A34F9951835CDE00084D695 /* ipa-valid-profile.ipa */,
 			);
-			name = Fixtures;
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 		4A46B16318347E2400650C3A /* Model */ = {
@@ -143,6 +189,11 @@
 		4AB2E836183303F000A5D813 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A34F9901835C75F0084D695 /* Foundation.framework */,
+				4A34F98E1835C7440084D695 /* libzipzap.a */,
+				4A34F97F1835C0280084D695 /* libz.dylib */,
+				4A34F97D1835C01C0084D695 /* libc++.dylib */,
+				4A34F97B1835C0000084D695 /* libzipzap.a */,
 				4A46B1601833116700650C3A /* Security.framework */,
 				4AB2E837183303F000A5D813 /* QuickLook.framework */,
 				4AB2E839183303F000A5D813 /* ApplicationServices.framework */,
@@ -157,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				4A46B16318347E2400650C3A /* Model */,
+				4A34F97A1835BE120084D695 /* Unpacker */,
 				4AE3E62318330604008B6924 /* Parser */,
 				4AB2E845183303F000A5D813 /* GenerateThumbnailForURL.c */,
 				4AB2E847183303F000A5D813 /* GeneratePreviewForURL.c */,
@@ -180,8 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				4A46B15B18330C5100650C3A /* Fixtures */,
-				4AE3E62818330684008B6924 /* PCProfileParserTest.m */,
 				4AE3E616183305CC008B6924 /* Supporting Files */,
+				4AE3E62818330684008B6924 /* PCProfileParserTest.m */,
+				4A34F9811835C0930084D695 /* PCArchiveUnpackerTest.m */,
 			);
 			path = "Hops Tests";
 			sourceTree = "<group>";
@@ -216,6 +269,7 @@
 				4AE3E6261833063F008B6924 /* PCProfileParser.h in Headers */,
 				4A46B16618347E3200650C3A /* PCProfile.h in Headers */,
 				4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */,
+				4A34F9851835C1030084D695 /* PCArchiveUnpacker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +360,11 @@
 			files = (
 				4AE3E61A183305CC008B6924 /* InfoPlist.strings in Resources */,
 				4A46B16F183483CE00650C3A /* plist-root-array.plist in Resources */,
+				4A34F98B1835C4B60084D695 /* ipa-no-profile.ipa in Resources */,
 				4A46B15F183310B100650C3A /* profile-valid.mobileprovision in Resources */,
+				4A34F9891835C11A0084D695 /* ipa-corrupt.ipa in Resources */,
 				4A46B15D18330C6400650C3A /* profile-corrupt.mobileprovision in Resources */,
+				4A34F9961835CDE00084D695 /* ipa-valid-profile.ipa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +390,7 @@
 				4A46B16718347E3200650C3A /* PCProfile.m in Sources */,
 				4A46B16C18347EA200650C3A /* PCMutableProfile.m in Sources */,
 				4AB2E848183303F000A5D813 /* GeneratePreviewForURL.c in Sources */,
+				4A34F9861835C1030084D695 /* PCArchiveUnpacker.m in Sources */,
 				4AB2E84A183303F000A5D813 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +401,9 @@
 			files = (
 				4AE3E62B18330A19008B6924 /* PCProfileParser.m in Sources */,
 				4A46B16818347E3200650C3A /* PCProfile.m in Sources */,
+				4A34F9871835C1030084D695 /* PCArchiveUnpacker.m in Sources */,
 				4AE3E62918330684008B6924 /* PCProfileParserTest.m in Sources */,
+				4A34F9821835C0930084D695 /* PCArchiveUnpackerTest.m in Sources */,
 				4A46B16D18347EA200650C3A /* PCMutableProfile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +469,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/zipzap/",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -441,6 +506,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/zipzap/",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
@@ -452,6 +522,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hops/Hops-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "Hops/Hops-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,6 +539,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hops/Hops-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "Hops/Hops-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,6 +564,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Hops Tests/Hops Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Hops-fzrjeswtxiuqnwajjmqrektwaauc/Build/Products/Debug",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -501,6 +583,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hops Tests/Hops Tests-Prefix.pch";
 				INFOPLIST_FILE = "Hops Tests/Hops Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Hops-fzrjeswtxiuqnwajjmqrektwaauc/Build/Products/Debug",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
