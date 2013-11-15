@@ -82,9 +82,11 @@
   while ([stream hasBytesAvailable]) {
     NSInteger result = [stream read:buffer maxLength:4096];
     if (result > 0) {
+      anyData = YES;
       CMSDecoderUpdateMessage(decoder, buffer, result);
+    } else {
+      break;
     }
-    anyData = YES;
   }
   return anyData;
 }

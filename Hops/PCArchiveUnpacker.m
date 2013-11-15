@@ -23,7 +23,7 @@
         [userInfo setObject:*error forKey:NSUnderlyingErrorKey];
       }
       *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
-                                   code:PCProfileParserErrorCorruptArchive
+                                   code:PCArchiveUnpackerErrorCorruptArchive
                                userInfo:nil];
       return nil;
     }
@@ -46,7 +46,7 @@
     return YES;
   } else {
     *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
-                                 code:PCProfileParserErrorNoEmbeddedProfile
+                                 code:PCArchiveUnpackerErrorNoEmbeddedProfile
                              userInfo:nil];
     return NO;
   }

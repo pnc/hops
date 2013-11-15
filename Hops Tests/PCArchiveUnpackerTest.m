@@ -22,7 +22,7 @@
   NSError *error = nil;
   PCArchiveUnpacker *unpacker = [[PCArchiveUnpacker alloc] initWithArchiveAtURL:corrupt error:&error];
   XCTAssertNil(unpacker, @"Expected no unpacker result");
-  XCTAssertEqual(error.code, PCProfileParserErrorCorruptArchive,
+  XCTAssertEqual(error.code, PCArchiveUnpackerErrorCorruptArchive,
                  @"Expected a corrupt archive error");
 }
 
@@ -33,7 +33,7 @@
   NSError *error = nil;
   PCArchiveUnpacker *unpacker = [[PCArchiveUnpacker alloc] initWithArchiveAtURL:archive error:&error];
   XCTAssertNil(unpacker, @"Expected no unpacker result");
-  XCTAssertEqual(error.code, PCProfileParserErrorNoEmbeddedProfile,
+  XCTAssertEqual(error.code, PCArchiveUnpackerErrorNoEmbeddedProfile,
                  @"Expected a no profile error");
 
 }

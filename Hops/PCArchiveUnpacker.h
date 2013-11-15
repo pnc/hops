@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, PCArchiveUnpackerError) {
-  PCProfileParserErrorUnknown = 9000,
-  PCProfileParserErrorCorruptArchive,
-  PCProfileParserErrorNoEmbeddedProfile
+  PCArchiveUnpackerErrorUnknown = 9000,
+  PCArchiveUnpackerErrorCorruptArchive,
+  PCArchiveUnpackerErrorNoEmbeddedProfile
 };
 
 static NSString* const PCArchiveUnpackerErrorDomain = @"PCArchiveUnpackerErrorDomain";
