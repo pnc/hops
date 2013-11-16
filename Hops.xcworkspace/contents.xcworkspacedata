@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:../Hops.xcodeproj">
+      location = "container:Hops.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../zipzap/zipzap.xcodeproj">
+      location = "group:zipzap/zipzap.xcodeproj">
    </FileRef>
 </Workspace>
