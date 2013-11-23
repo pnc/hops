@@ -7,50 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A34F97C1835C0000084D695 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97B1835C0000084D695 /* libzipzap.a */; };
-		4A34F97E1835C01D0084D695 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97D1835C01C0084D695 /* libc++.dylib */; };
-		4A34F9801835C0280084D695 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97F1835C0280084D695 /* libz.dylib */; };
-		4A34F9821835C0930084D695 /* PCArchiveUnpackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9811835C0930084D695 /* PCArchiveUnpackerTest.m */; };
 		4A34F9851835C1030084D695 /* PCArchiveUnpacker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */; };
-		4A34F9861835C1030084D695 /* PCArchiveUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */; };
-		4A34F9871835C1030084D695 /* PCArchiveUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */; };
-		4A34F9891835C11A0084D695 /* ipa-corrupt.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F9881835C11A0084D695 /* ipa-corrupt.ipa */; };
-		4A34F98B1835C4B60084D695 /* ipa-no-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F98A1835C4B60084D695 /* ipa-no-profile.ipa */; };
-		4A34F98C1835C7350084D695 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97F1835C0280084D695 /* libz.dylib */; };
-		4A34F98D1835C73B0084D695 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97D1835C01C0084D695 /* libc++.dylib */; };
-		4A34F98F1835C7440084D695 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F98E1835C7440084D695 /* libzipzap.a */; };
-		4A34F9911835C75F0084D695 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F9901835C75F0084D695 /* Foundation.framework */; };
-		4A34F9921835C76C0084D695 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E839183303F000A5D813 /* ApplicationServices.framework */; };
-		4A34F9961835CDE00084D695 /* ipa-valid-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F9951835CDE00084D695 /* ipa-valid-profile.ipa */; };
 		4A34F99A1835CF460084D695 /* PCArchivePreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9981835CF460084D695 /* PCArchivePreview.h */; };
-		4A34F99B1835CF460084D695 /* PCArchivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9991835CF460084D695 /* PCArchivePreview.m */; };
-		4A34F99D1835CF5D0084D695 /* PCArchivePreviewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F99C1835CF5D0084D695 /* PCArchivePreviewTest.m */; };
-		4A34F99E1835CF660084D695 /* PCArchivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9991835CF460084D695 /* PCArchivePreview.m */; };
-		4A46B15D18330C6400650C3A /* profile-corrupt.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */; };
-		4A46B15F183310B100650C3A /* profile-valid.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B15E183310B100650C3A /* profile-valid.mobileprovision */; };
-		4A46B1611833116700650C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
-		4A46B1621833126800650C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
 		4A46B16618347E3200650C3A /* PCProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16418347E3200650C3A /* PCProfile.h */; };
-		4A46B16718347E3200650C3A /* PCProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16518347E3200650C3A /* PCProfile.m */; };
-		4A46B16818347E3200650C3A /* PCProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16518347E3200650C3A /* PCProfile.m */; };
 		4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16918347EA200650C3A /* PCMutableProfile.h */; };
-		4A46B16C18347EA200650C3A /* PCMutableProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16A18347EA200650C3A /* PCMutableProfile.m */; };
-		4A46B16D18347EA200650C3A /* PCMutableProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16A18347EA200650C3A /* PCMutableProfile.m */; };
-		4A46B16F183483CE00650C3A /* plist-root-array.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A46B16E183483CE00650C3A /* plist-root-array.plist */; };
 		4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E837183303F000A5D813 /* QuickLook.framework */; };
-		4AB2E83A183303F000A5D813 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E839183303F000A5D813 /* ApplicationServices.framework */; };
-		4AB2E83C183303F000A5D813 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83B183303F000A5D813 /* CoreServices.framework */; };
-		4AB2E83E183303F000A5D813 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83D183303F000A5D813 /* CoreFoundation.framework */; };
 		4AB2E844183303F000A5D813 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AB2E842183303F000A5D813 /* InfoPlist.strings */; };
 		4AB2E846183303F000A5D813 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2E845183303F000A5D813 /* GenerateThumbnailForURL.c */; };
 		4AB2E848183303F000A5D813 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2E847183303F000A5D813 /* GeneratePreviewForURL.c */; };
 		4AB2E84A183303F000A5D813 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2E849183303F000A5D813 /* main.c */; };
+		4AD9CCC018415FE400B4C900 /* PCArchivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9991835CF460084D695 /* PCArchivePreview.m */; };
+		4AD9CCC118415FE400B4C900 /* PCProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16518347E3200650C3A /* PCProfile.m */; };
+		4AD9CCC218415FE400B4C900 /* PCMutableProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16A18347EA200650C3A /* PCMutableProfile.m */; };
+		4AD9CCC318415FE400B4C900 /* PCArchiveUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */; };
+		4AD9CCC418415FE400B4C900 /* PCProfileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3E6251833063F008B6924 /* PCProfileParser.m */; };
+		4AD9CCC518415FFB00B4C900 /* Hops.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD9CC9B18415FC400B4C900 /* Hops.dylib */; };
+		4AD9CCC71841601E00B4C900 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD9CCC61841601E00B4C900 /* libzipzap.a */; };
+		4AD9CCC81841602200B4C900 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97F1835C0280084D695 /* libz.dylib */; };
+		4AD9CCC91841604700B4C900 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34F97D1835C01C0084D695 /* libc++.dylib */; };
+		4AD9CCCA1841605000B4C900 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E839183303F000A5D813 /* ApplicationServices.framework */; };
+		4AD9CCCB1841605500B4C900 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83B183303F000A5D813 /* CoreServices.framework */; };
+		4AD9CCCC1841605900B4C900 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83D183303F000A5D813 /* CoreFoundation.framework */; };
+		4AD9CCCD1841605F00B4C900 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
+		4AD9CCCE1841608B00B4C900 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83D183303F000A5D813 /* CoreFoundation.framework */; };
+		4AD9CCDB1841618000B4C900 /* PCArchivePreviewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCD81841618000B4C900 /* PCArchivePreviewTest.m */; };
+		4AD9CCDC1841618000B4C900 /* PCArchiveUnpackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCD91841618000B4C900 /* PCArchiveUnpackerTest.m */; };
+		4AD9CCDD1841618000B4C900 /* PCProfileParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCDA1841618000B4C900 /* PCProfileParserTest.m */; };
+		4AD9CCE71841621200B4C900 /* ipa-valid-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCE21841621200B4C900 /* ipa-valid-profile.ipa */; };
+		4AD9CCE81841621200B4C900 /* ipa-no-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCE31841621200B4C900 /* ipa-no-profile.ipa */; };
+		4AD9CCE91841621200B4C900 /* ipa-corrupt.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCE41841621200B4C900 /* ipa-corrupt.ipa */; };
+		4AD9CCEA1841621200B4C900 /* plist-root-array.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCE51841621200B4C900 /* plist-root-array.plist */; };
+		4AD9CCEB1841621200B4C900 /* profile-corrupt.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCE61841621200B4C900 /* profile-corrupt.mobileprovision */; };
+		4AD9CCEE1841631E00B4C900 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCEC1841631E00B4C900 /* InfoPlist.strings */; };
+		4AD9CCF0184163CD00B4C900 /* profile-valid.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCEF184163CD00B4C900 /* profile-valid.mobileprovision */; };
 		4AE3E614183305CC008B6924 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE3E613183305CC008B6924 /* XCTest.framework */; };
-		4AE3E61A183305CC008B6924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AE3E618183305CC008B6924 /* InfoPlist.strings */; };
 		4AE3E6261833063F008B6924 /* PCProfileParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE3E6241833063F008B6924 /* PCProfileParser.h */; };
-		4AE3E6271833063F008B6924 /* PCProfileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3E6251833063F008B6924 /* PCProfileParser.m */; };
-		4AE3E62918330684008B6924 /* PCProfileParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3E62818330684008B6924 /* PCProfileParserTest.m */; };
-		4AE3E62B18330A19008B6924 /* PCProfileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3E6251833063F008B6924 /* PCProfileParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,30 +55,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A34F97B1835C0000084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libzipzap.a; path = zipzap/build/Debug/libzipzap.a; sourceTree = "<group>"; };
+		4A34F97B1835C0000084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = zipzap/build/Debug/libzipzap.a; sourceTree = "<group>"; };
 		4A34F97D1835C01C0084D695 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		4A34F97F1835C0280084D695 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		4A34F9811835C0930084D695 /* PCArchiveUnpackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchiveUnpackerTest.m; sourceTree = "<group>"; };
 		4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCArchiveUnpacker.h; sourceTree = "<group>"; };
 		4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchiveUnpacker.m; sourceTree = "<group>"; };
-		4A34F9881835C11A0084D695 /* ipa-corrupt.ipa */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "ipa-corrupt.ipa"; sourceTree = "<group>"; };
-		4A34F98A1835C4B60084D695 /* ipa-no-profile.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-no-profile.ipa"; sourceTree = "<group>"; };
 		4A34F98E1835C7440084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = "../../Library/Developer/Xcode/DerivedData/Hops-fzrjeswtxiuqnwajjmqrektwaauc/Build/Products/Debug/libzipzap.a"; sourceTree = "<group>"; };
 		4A34F9901835C75F0084D695 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4A34F9951835CDE00084D695 /* ipa-valid-profile.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-valid-profile.ipa"; sourceTree = "<group>"; };
 		4A34F9981835CF460084D695 /* PCArchivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCArchivePreview.h; sourceTree = "<group>"; };
 		4A34F9991835CF460084D695 /* PCArchivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchivePreview.m; sourceTree = "<group>"; };
-		4A34F99C1835CF5D0084D695 /* PCArchivePreviewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchivePreviewTest.m; sourceTree = "<group>"; };
-		4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = "profile-corrupt.mobileprovision"; sourceTree = "<group>"; };
-		4A46B15E183310B100650C3A /* profile-valid.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = "profile-valid.mobileprovision"; sourceTree = "<group>"; };
 		4A46B1601833116700650C3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4A46B16418347E3200650C3A /* PCProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCProfile.h; sourceTree = "<group>"; };
 		4A46B16518347E3200650C3A /* PCProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCProfile.m; sourceTree = "<group>"; };
 		4A46B16918347EA200650C3A /* PCMutableProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMutableProfile.h; sourceTree = "<group>"; };
 		4A46B16A18347EA200650C3A /* PCMutableProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMutableProfile.m; sourceTree = "<group>"; };
-		4A46B16E183483CE00650C3A /* plist-root-array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "plist-root-array.plist"; sourceTree = "<group>"; };
 		4A46B170183484B700650C3A /* PCProfileParser_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCProfileParser_Private.h; sourceTree = "<group>"; };
-		4AB2E834183303F000A5D813 /* Hops.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hops.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AB2E834183303F000A5D813 /* Hops Viewer.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hops Viewer.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB2E837183303F000A5D813 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4AB2E839183303F000A5D813 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		4AB2E83B183303F000A5D813 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -98,14 +81,29 @@
 		4AB2E847183303F000A5D813 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
 		4AB2E849183303F000A5D813 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4AB2E84B183303F000A5D813 /* Hops-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hops-Prefix.pch"; sourceTree = "<group>"; };
+		4AD9CC9B18415FC400B4C900 /* Hops.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Hops.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD9CC9C18415FC400B4C900 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4AD9CC9F18415FC400B4C900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4AD9CCA018415FC400B4C900 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4AD9CCA118415FC400B4C900 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4AD9CCA418415FC400B4C900 /* Hops-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hops-Prefix.pch"; sourceTree = "<group>"; };
+		4AD9CCC61841601E00B4C900 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = "../../Library/Developer/Xcode/DerivedData/Hops-fgfwgdsrrnqvunagseelsuymjngl/Build/Products/Debug/libzipzap.a"; sourceTree = "<group>"; };
+		4AD9CCD81841618000B4C900 /* PCArchivePreviewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCArchivePreviewTest.m; path = "Hops Tests/PCArchivePreviewTest.m"; sourceTree = "<group>"; };
+		4AD9CCD91841618000B4C900 /* PCArchiveUnpackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCArchiveUnpackerTest.m; path = "Hops Tests/PCArchiveUnpackerTest.m"; sourceTree = "<group>"; };
+		4AD9CCDA1841618000B4C900 /* PCProfileParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCProfileParserTest.m; path = "Hops Tests/PCProfileParserTest.m"; sourceTree = "<group>"; };
+		4AD9CCDE1841618900B4C900 /* Hops Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Hops Tests-Info.plist"; path = "Hops Tests/Hops Tests-Info.plist"; sourceTree = "<group>"; };
+		4AD9CCDF1841618900B4C900 /* Hops Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Hops Tests-Prefix.pch"; path = "Hops Tests/Hops Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4AD9CCE21841621200B4C900 /* ipa-valid-profile.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-valid-profile.ipa"; sourceTree = "<group>"; };
+		4AD9CCE31841621200B4C900 /* ipa-no-profile.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-no-profile.ipa"; sourceTree = "<group>"; };
+		4AD9CCE41841621200B4C900 /* ipa-corrupt.ipa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ipa-corrupt.ipa"; sourceTree = "<group>"; };
+		4AD9CCE51841621200B4C900 /* plist-root-array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "plist-root-array.plist"; sourceTree = "<group>"; };
+		4AD9CCE61841621200B4C900 /* profile-corrupt.mobileprovision */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "profile-corrupt.mobileprovision"; sourceTree = "<group>"; };
+		4AD9CCED1841631E00B4C900 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Hops Tests/en.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4AD9CCEF184163CD00B4C900 /* profile-valid.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = "profile-valid.mobileprovision"; sourceTree = "<group>"; };
 		4AE3E612183305CC008B6924 /* Hops Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hops Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE3E613183305CC008B6924 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4AE3E617183305CC008B6924 /* Hops Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hops Tests-Info.plist"; sourceTree = "<group>"; };
-		4AE3E619183305CC008B6924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4AE3E61D183305CC008B6924 /* Hops Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hops Tests-Prefix.pch"; sourceTree = "<group>"; };
 		4AE3E6241833063F008B6924 /* PCProfileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCProfileParser.h; sourceTree = "<group>"; };
 		4AE3E6251833063F008B6924 /* PCProfileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCProfileParser.m; sourceTree = "<group>"; };
-		4AE3E62818330684008B6924 /* PCProfileParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCProfileParserTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +111,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A34F9801835C0280084D695 /* libz.dylib in Frameworks */,
-				4A34F97E1835C01D0084D695 /* libc++.dylib in Frameworks */,
-				4A34F97C1835C0000084D695 /* libzipzap.a in Frameworks */,
-				4A46B1611833116700650C3A /* Security.framework in Frameworks */,
-				4AB2E83E183303F000A5D813 /* CoreFoundation.framework in Frameworks */,
 				4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */,
-				4AB2E83C183303F000A5D813 /* CoreServices.framework in Frameworks */,
-				4AB2E83A183303F000A5D813 /* ApplicationServices.framework in Frameworks */,
+				4AD9CCCE1841608B00B4C900 /* CoreFoundation.framework in Frameworks */,
+				4AD9CCC518415FFB00B4C900 /* Hops.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD9CC9818415FC400B4C900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD9CCCD1841605F00B4C900 /* Security.framework in Frameworks */,
+				4AD9CCCC1841605900B4C900 /* CoreFoundation.framework in Frameworks */,
+				4AD9CCCB1841605500B4C900 /* CoreServices.framework in Frameworks */,
+				4AD9CCCA1841605000B4C900 /* ApplicationServices.framework in Frameworks */,
+				4AD9CCC91841604700B4C900 /* libc++.dylib in Frameworks */,
+				4AD9CCC81841602200B4C900 /* libz.dylib in Frameworks */,
+				4AD9CCC71841601E00B4C900 /* libzipzap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A34F9921835C76C0084D695 /* ApplicationServices.framework in Frameworks */,
-				4A34F9911835C75F0084D695 /* Foundation.framework in Frameworks */,
-				4A34F98F1835C7440084D695 /* libzipzap.a in Frameworks */,
-				4A34F98D1835C73B0084D695 /* libc++.dylib in Frameworks */,
-				4A34F98C1835C7350084D695 /* libz.dylib in Frameworks */,
-				4A46B1621833126800650C3A /* Security.framework in Frameworks */,
 				4AE3E614183305CC008B6924 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,19 +160,6 @@
 			name = Generator;
 			sourceTree = "<group>";
 		};
-		4A46B15B18330C5100650C3A /* Fixtures */ = {
-			isa = PBXGroup;
-			children = (
-				4A46B15C18330C6400650C3A /* profile-corrupt.mobileprovision */,
-				4A46B15E183310B100650C3A /* profile-valid.mobileprovision */,
-				4A46B16E183483CE00650C3A /* plist-root-array.plist */,
-				4A34F9881835C11A0084D695 /* ipa-corrupt.ipa */,
-				4A34F98A1835C4B60084D695 /* ipa-no-profile.ipa */,
-				4A34F9951835CDE00084D695 /* ipa-valid-profile.ipa */,
-			);
-			path = Fixtures;
-			sourceTree = "<group>";
-		};
 		4A46B16318347E2400650C3A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				4AB2E83F183303F000A5D813 /* Hops */,
-				4AE3E615183305CC008B6924 /* Hops Tests */,
+				4AD9CCD61841617200B4C900 /* Hops Tests */,
+				4AD9CCA218415FC400B4C900 /* Hops */,
 				4AB2E836183303F000A5D813 /* Frameworks */,
 				4AB2E835183303F000A5D813 /* Products */,
 			);
@@ -196,8 +185,9 @@
 		4AB2E835183303F000A5D813 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AB2E834183303F000A5D813 /* Hops.qlgenerator */,
+				4AB2E834183303F000A5D813 /* Hops Viewer.qlgenerator */,
 				4AE3E612183305CC008B6924 /* Hops Tests.xctest */,
+				4AD9CC9B18415FC400B4C900 /* Hops.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +195,7 @@
 		4AB2E836183303F000A5D813 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AD9CCC61841601E00B4C900 /* libzipzap.a */,
 				4A34F9901835C75F0084D695 /* Foundation.framework */,
 				4A34F98E1835C7440084D695 /* libzipzap.a */,
 				4A34F97F1835C0280084D695 /* libz.dylib */,
@@ -216,6 +207,8 @@
 				4AB2E83B183303F000A5D813 /* CoreServices.framework */,
 				4AB2E83D183303F000A5D813 /* CoreFoundation.framework */,
 				4AE3E613183305CC008B6924 /* XCTest.framework */,
+				4AD9CC9C18415FC400B4C900 /* Cocoa.framework */,
+				4AD9CC9E18415FC400B4C900 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,26 +238,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4AE3E615183305CC008B6924 /* Hops Tests */ = {
+		4AD9CC9E18415FC400B4C900 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A46B15B18330C5100650C3A /* Fixtures */,
-				4AE3E616183305CC008B6924 /* Supporting Files */,
-				4AE3E62818330684008B6924 /* PCProfileParserTest.m */,
-				4A34F9811835C0930084D695 /* PCArchiveUnpackerTest.m */,
-				4A34F99C1835CF5D0084D695 /* PCArchivePreviewTest.m */,
+				4AD9CC9F18415FC400B4C900 /* Foundation.framework */,
+				4AD9CCA018415FC400B4C900 /* CoreData.framework */,
+				4AD9CCA118415FC400B4C900 /* AppKit.framework */,
 			);
-			path = "Hops Tests";
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		4AE3E616183305CC008B6924 /* Supporting Files */ = {
+		4AD9CCA218415FC400B4C900 /* Hops */ = {
 			isa = PBXGroup;
 			children = (
-				4AE3E617183305CC008B6924 /* Hops Tests-Info.plist */,
-				4AE3E618183305CC008B6924 /* InfoPlist.strings */,
-				4AE3E61D183305CC008B6924 /* Hops Tests-Prefix.pch */,
+				4AD9CCA318415FC400B4C900 /* Supporting Files */,
+			);
+			path = Hops;
+			sourceTree = "<group>";
+		};
+		4AD9CCA318415FC400B4C900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AD9CCA418415FC400B4C900 /* Hops-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AD9CCD61841617200B4C900 /* Hops Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4AD9CCE1184161D800B4C900 /* Fixtures */,
+				4AD9CCD81841618000B4C900 /* PCArchivePreviewTest.m */,
+				4AD9CCD91841618000B4C900 /* PCArchiveUnpackerTest.m */,
+				4AD9CCDA1841618000B4C900 /* PCProfileParserTest.m */,
+				4AD9CCD71841617400B4C900 /* Supporting Files */,
+			);
+			name = "Hops Tests";
+			sourceTree = "<group>";
+		};
+		4AD9CCD71841617400B4C900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AD9CCEC1841631E00B4C900 /* InfoPlist.strings */,
+				4AD9CCDE1841618900B4C900 /* Hops Tests-Info.plist */,
+				4AD9CCDF1841618900B4C900 /* Hops Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AD9CCE1184161D800B4C900 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				4AD9CCE21841621200B4C900 /* ipa-valid-profile.ipa */,
+				4AD9CCE31841621200B4C900 /* ipa-no-profile.ipa */,
+				4AD9CCE41841621200B4C900 /* ipa-corrupt.ipa */,
+				4AD9CCE51841621200B4C900 /* plist-root-array.plist */,
+				4AD9CCEF184163CD00B4C900 /* profile-valid.mobileprovision */,
+				4AD9CCE61841621200B4C900 /* profile-corrupt.mobileprovision */,
+			);
+			name = Fixtures;
+			path = "Hops Tests/Fixtures";
 			sourceTree = "<group>";
 		};
 		4AE3E62318330604008B6924 /* Parser */ = {
@@ -292,12 +325,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4AD9CC9918415FC400B4C900 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4AB2E833183303F000A5D813 /* Hops */ = {
+		4AB2E833183303F000A5D813 /* Hops Viewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AB2E84E183303F000A5D813 /* Build configuration list for PBXNativeTarget "Hops" */;
+			buildConfigurationList = 4AB2E84E183303F000A5D813 /* Build configuration list for PBXNativeTarget "Hops Viewer" */;
 			buildPhases = (
 				4AB2E82E183303F000A5D813 /* Sources */,
 				4AB2E82F183303F000A5D813 /* Frameworks */,
@@ -309,10 +349,27 @@
 			);
 			dependencies = (
 			);
+			name = "Hops Viewer";
+			productName = Hops;
+			productReference = 4AB2E834183303F000A5D813 /* Hops Viewer.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4AD9CC9A18415FC400B4C900 /* Hops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD9CCBE18415FC500B4C900 /* Build configuration list for PBXNativeTarget "Hops" */;
+			buildPhases = (
+				4AD9CC9718415FC400B4C900 /* Sources */,
+				4AD9CC9818415FC400B4C900 /* Frameworks */,
+				4AD9CC9918415FC400B4C900 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
 			name = Hops;
 			productName = Hops;
-			productReference = 4AB2E834183303F000A5D813 /* Hops.qlgenerator */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 4AD9CC9B18415FC400B4C900 /* Hops.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 		4AE3E611183305CC008B6924 /* Hops Tests */ = {
 			isa = PBXNativeTarget;
@@ -342,7 +399,7 @@
 				ORGANIZATIONNAME = "Phil Calvin";
 				TargetAttributes = {
 					4AE3E611183305CC008B6924 = {
-						TestTargetID = 4AB2E833183303F000A5D813;
+						TestTargetID = 4AD9CC9A18415FC400B4C900;
 					};
 				};
 			};
@@ -358,7 +415,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AB2E833183303F000A5D813 /* Hops */,
+				4AD9CC9A18415FC400B4C900 /* Hops */,
+				4AB2E833183303F000A5D813 /* Hops Viewer */,
 				4AE3E611183305CC008B6924 /* Hops Tests */,
 			);
 		};
@@ -377,13 +435,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE3E61A183305CC008B6924 /* InfoPlist.strings in Resources */,
-				4A46B16F183483CE00650C3A /* plist-root-array.plist in Resources */,
-				4A34F98B1835C4B60084D695 /* ipa-no-profile.ipa in Resources */,
-				4A46B15F183310B100650C3A /* profile-valid.mobileprovision in Resources */,
-				4A34F9891835C11A0084D695 /* ipa-corrupt.ipa in Resources */,
-				4A46B15D18330C6400650C3A /* profile-corrupt.mobileprovision in Resources */,
-				4A34F9961835CDE00084D695 /* ipa-valid-profile.ipa in Resources */,
+				4AD9CCEA1841621200B4C900 /* plist-root-array.plist in Resources */,
+				4AD9CCEE1841631E00B4C900 /* InfoPlist.strings in Resources */,
+				4AD9CCF0184163CD00B4C900 /* profile-valid.mobileprovision in Resources */,
+				4AD9CCE71841621200B4C900 /* ipa-valid-profile.ipa in Resources */,
+				4AD9CCE91841621200B4C900 /* ipa-corrupt.ipa in Resources */,
+				4AD9CCEB1841621200B4C900 /* profile-corrupt.mobileprovision in Resources */,
+				4AD9CCE81841621200B4C900 /* ipa-no-profile.ipa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,13 +463,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB2E846183303F000A5D813 /* GenerateThumbnailForURL.c in Sources */,
-				4AE3E6271833063F008B6924 /* PCProfileParser.m in Sources */,
-				4A46B16718347E3200650C3A /* PCProfile.m in Sources */,
-				4A46B16C18347EA200650C3A /* PCMutableProfile.m in Sources */,
-				4A34F99B1835CF460084D695 /* PCArchivePreview.m in Sources */,
 				4AB2E848183303F000A5D813 /* GeneratePreviewForURL.c in Sources */,
-				4A34F9861835C1030084D695 /* PCArchiveUnpacker.m in Sources */,
 				4AB2E84A183303F000A5D813 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD9CC9718415FC400B4C900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD9CCC018415FE400B4C900 /* PCArchivePreview.m in Sources */,
+				4AD9CCC118415FE400B4C900 /* PCProfile.m in Sources */,
+				4AD9CCC218415FE400B4C900 /* PCMutableProfile.m in Sources */,
+				4AD9CCC318415FE400B4C900 /* PCArchiveUnpacker.m in Sources */,
+				4AD9CCC418415FE400B4C900 /* PCProfileParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,14 +484,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A34F99E1835CF660084D695 /* PCArchivePreview.m in Sources */,
-				4AE3E62B18330A19008B6924 /* PCProfileParser.m in Sources */,
-				4A46B16818347E3200650C3A /* PCProfile.m in Sources */,
-				4A34F9871835C1030084D695 /* PCArchiveUnpacker.m in Sources */,
-				4A34F99D1835CF5D0084D695 /* PCArchivePreviewTest.m in Sources */,
-				4AE3E62918330684008B6924 /* PCProfileParserTest.m in Sources */,
-				4A34F9821835C0930084D695 /* PCArchiveUnpackerTest.m in Sources */,
-				4A46B16D18347EA200650C3A /* PCMutableProfile.m in Sources */,
+				4AD9CCDD1841618000B4C900 /* PCProfileParserTest.m in Sources */,
+				4AD9CCDC1841618000B4C900 /* PCArchiveUnpackerTest.m in Sources */,
+				4AD9CCDB1841618000B4C900 /* PCArchivePreviewTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +495,7 @@
 /* Begin PBXTargetDependency section */
 		4AE3E61F183305CC008B6924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4AB2E833183303F000A5D813 /* Hops */;
+			target = 4AB2E833183303F000A5D813 /* Hops Viewer */;
 			targetProxy = 4AE3E61E183305CC008B6924 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -449,10 +509,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4AE3E618183305CC008B6924 /* InfoPlist.strings */ = {
+		4AD9CCEC1841631E00B4C900 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AE3E619183305CC008B6924 /* en */,
+				4AD9CCED1841631E00B4C900 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -572,9 +632,44 @@
 			};
 			name = Release;
 		};
+		4AD9CCBA18415FC500B4C900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hops/Hops-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Hops-fgfwgdsrrnqvunagseelsuymjngl/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4AD9CCBB18415FC500B4C900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hops/Hops-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Hops-fgfwgdsrrnqvunagseelsuymjngl/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		4AE3E620183305CC008B6924 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hops.dylib";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -591,6 +686,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Hops-fzrjeswtxiuqnwajjmqrektwaauc/Build/Products/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -598,6 +694,7 @@
 		4AE3E621183305CC008B6924 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hops.dylib";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -610,6 +707,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Hops-fzrjeswtxiuqnwajjmqrektwaauc/Build/Products/Debug",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -626,7 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AB2E84E183303F000A5D813 /* Build configuration list for PBXNativeTarget "Hops" */ = {
+		4AB2E84E183303F000A5D813 /* Build configuration list for PBXNativeTarget "Hops Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AB2E84F183303F000A5D813 /* Debug */,
@@ -634,6 +732,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4AD9CCBE18415FC500B4C900 /* Build configuration list for PBXNativeTarget "Hops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD9CCBA18415FC500B4C900 /* Debug */,
+				4AD9CCBB18415FC500B4C900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		4AE3E622183305CC008B6924 /* Build configuration list for PBXNativeTarget "Hops Tests" */ = {
 			isa = XCConfigurationList;

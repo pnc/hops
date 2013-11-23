@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Hops 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Hops.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>4AB2E833183303F000A5D813</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4AD9CC9A18415FC400B4C900</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4AD9CCAB18415FC500B4C900</key>
 		<dict>
 			<key>primary</key>
 			<true/>

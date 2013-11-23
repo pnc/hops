@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4AB2E833183303F000A5D813"
-               BuildableName = "Hops.qlgenerator"
-               BlueprintName = "Hops"
+               BuildableName = "Hops Viewer.qlgenerator"
+               BlueprintName = "Hops Viewer"
                ReferencedContainer = "container:Hops.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
