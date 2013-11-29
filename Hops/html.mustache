@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        line-height: 24px;
+      }
+      body {
+        font-family: "Helvetica Neue";
+        font-size: 18pt;
+        font-weight: 300;
+      }
+      header {
+        background-color: #0D95FC;
+        color: white;
+        font-weight: 100;
+        margin-bottom: 24px;
+      }
+      h1 {
+        font-weight: 100;
+        line-height: 48px;
+        vertical-align: baseline;
+        padding: 24px 12px 24px 24px;
+        display: inline-block;
+      }
+      dt {
+        color: #0D95FC;
+        width: 220px;
+        float: left;
+        clear: both;
+        text-align: right;
+        margin: 0 0 24px 0;
+      }
+      dl {
+        padding: 0 24px 24px 24px;
+      }
+      dd {
+        margin-left: 260px;
+        margin-bottom: 24px;
+      }
+      ul.permitted-devices li {
+        font-family: "Monaco";
+        font-size: 12pt;
+        list-style-type: none;
+      }
+    </style>
+    <title>{{name}}</title>
+  </head>
+  <body>
+    <header>
+      <h1>{{name}}</h1>
+      <span class="version">1.0.5</span>
+    </header>
+    <dl class="properties">
+      <dt>Application Identifier</dt>
+      <dd>{{applicationIdentifier}}</dd>
+{{#applePushServiceEnvironment}}
+      <dt>APNS Environment</dt>
+      <dd>{{applePushServiceEnvironment}}</dd>
+{{/applePushServiceEnvironment}}
+      <dt>Debugging Enabled</dt>
+      <dd>{{#getTaskAllow}}Yes{{/getTaskAllow}}{{^getTaskAllow}}No{{/getTaskAllow}}</dd>
+{{#provisionedDevices.count}}
+      <dt>Permitted Devices</dt>
+      <dd>
+        <ul class="permitted-devices">
+        {{#provisionedDevices}}
+          <li>{{.}}</li>
+        {{/provisionedDevices}}
+        </ul>
+      </dd>
+{{/provisionedDevices.count}}
+{{#keychainAccessGroups.count}}
+      <dt>Keychain Access Groups</dt>
+      <dd>
+        <ul class="keychain-access-groups">
+        {{#keychainAccessGroups}}
+          <li>{{.}}</li>
+        {{/keychainAccessGroups}}
+        </ul>
+      </dd>
+{{/keychainAccessGroups.count}}
+    </dl>
+  </body>
+</html>

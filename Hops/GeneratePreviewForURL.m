@@ -20,7 +20,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef request,
     NSError *error = nil;
     BOOL result = [preview generate:&error];
     if (result) {
-      NSData *data = [preview.plainText dataUsingEncoding:NSUTF8StringEncoding];
+      NSData *data = [preview.HTML dataUsingEncoding:NSUTF8StringEncoding];
       QLPreviewRequestSetDataRepresentation(request,
                                             (__bridge CFDataRef)data,
                                             kUTTypeHTML,

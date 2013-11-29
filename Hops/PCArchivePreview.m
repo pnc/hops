@@ -25,15 +25,29 @@
                                initWithStream:archive.streamForEmbeddedProfile];
     if ([parser parse:error]) {
       PCProfile *profile = parser.profile;
-      NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-      NSString *plainText = [GRMustacheTemplate renderObject:profile
-                                                fromResource:@"text"
-                                                      bundle:bundle
-                                                       error:error];
-      if (plainText) {
-        self.plainText = plainText;
+      if ([self render:profile withError:error]) {
         return YES;
       }
+    }
+  }
+  return NO;
+}
+
+- (BOOL)render:(PCProfile *)profile withError:(NSError *__autoreleasing *)error {
+  NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+  NSString *plainText = [GRMustacheTemplate renderObject:profile
+                                            fromResource:@"text"
+                                                  bundle:bundle
+                                                   error:error];
+  if (plainText) {
+    NSString *HTML = [GRMustacheTemplate renderObject:profile
+                                         fromResource:@"html"
+                                               bundle:bundle
+                                                error:error];
+    if (HTML) {
+      self.plainText = plainText;
+      self.HTML = HTML;
+      return YES;
     }
   }
   return NO;
