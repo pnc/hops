@@ -15,7 +15,7 @@
   [super tearDown];
 }
 
-- (void)testRealArchive {
+- (void)testRealArchiveTextPreview {
   NSURL *archive = [[NSBundle bundleForClass:[self class]]
                     URLForResource:@"ipa-valid-profile"
                     withExtension:@"ipa"];

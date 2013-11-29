@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Hops.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "56DEC247152631040031E8DC"
+               BuildableName = "libGRMustache6-MacOS.a"
+               BlueprintName = "GRMustache6-MacOS"
+               ReferencedContainer = "container:GRMustache/src/GRMustache.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

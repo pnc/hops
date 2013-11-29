@@ -24,7 +24,8 @@
       }
       *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
                                    code:PCArchiveUnpackerErrorCorruptArchive
-                               userInfo:nil];
+                               userInfo:@{NSLocalizedDescriptionKey:
+                                            @"The file is not a valid ZIP archive and cannot be parsed."}];
       return nil;
     }
   }
@@ -47,7 +48,8 @@
   } else {
     *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
                                  code:PCArchiveUnpackerErrorNoEmbeddedProfile
-                             userInfo:nil];
+                             userInfo:@{NSLocalizedDescriptionKey:
+                                          @"The file does not contain an embedded provisioning profile."}];
     return NO;
   }
 }

@@ -2,10 +2,12 @@
 #import "PCArchiveUnpacker.h"
 #import "PCProfileParser.h"
 #import "PCProfile.h"
+#import <GRMustache.h>
 
 @interface PCArchivePreview ()
 @property NSURL *url;
 @property (readwrite) NSString *plainText;
+@property (readwrite) NSString *HTML;
 @end
 
 @implementation PCArchivePreview
@@ -23,10 +25,15 @@
                                initWithStream:archive.streamForEmbeddedProfile];
     if ([parser parse:error]) {
       PCProfile *profile = parser.profile;
-      self.plainText = [NSString stringWithFormat:@"Permitted UDIDs:\n  %@",
-                        [profile.provisionedDevices
-                         componentsJoinedByString:@"\n  "]];
-      return YES;
+      NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+      NSString *plainText = [GRMustacheTemplate renderObject:profile
+                                                fromResource:@"text"
+                                                      bundle:bundle
+                                                       error:error];
+      if (plainText) {
+        self.plainText = plainText;
+        return YES;
+      }
     }
   }
   return NO;
