@@ -2,7 +2,7 @@
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
 #import <Foundation/Foundation.h>
-#import "PCArchivePreview.h"
+#import "PCPackagePreview.h"
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options);
 void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
@@ -14,7 +14,7 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
    ----------------------------------------------------------------------------- */
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef request, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options) {
-  PCArchivePreview *preview = [[PCArchivePreview alloc]
+  PCPackagePreview *preview = [[PCPackagePreview alloc]
                                initWithURL:(__bridge NSURL *)(url)];
   @autoreleasepool {
     NSError *error = nil;

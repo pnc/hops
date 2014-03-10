@@ -1,18 +1,18 @@
-#import "PCArchivePreview.h"
-#import "PCArchiveUnpacker.h"
+#import "PCPackagePreview.h"
+#import "PCPackageUnpacker.h"
 #import "PCProfileParser.h"
 #import "PCInfoParser.h"
 #import "PCInfo.h"
 #import "PCProfile.h"
 #import <GRMustache.h>
 
-@interface PCArchivePreview ()
+@interface PCPackagePreview ()
 @property NSURL *url;
 @property (readwrite) NSString *plainText;
 @property (readwrite) NSString *HTML;
 @end
 
-@implementation PCArchivePreview
+@implementation PCPackagePreview
 - (instancetype)initWithURL:(NSURL *)url {
   if (self = [super init]) {
     self.url = url;
@@ -21,17 +21,17 @@
 }
 
 - (BOOL)generate:(NSError *__autoreleasing *)error {
-  PCArchiveUnpacker *archive = [[PCArchiveUnpacker alloc] initWithArchiveAtURL:self.url error:error];
-  if (archive) {
+  PCPackageUnpacker *unpacker = [[PCPackageUnpacker alloc] initWithPackageAtURL:self.url error:error];
+  if (unpacker) {
     PCProfileParser *profileParser = nil;
-    if (archive.streamForEmbeddedProfile) {
+    if (unpacker.streamForEmbeddedProfile) {
       profileParser = [[PCProfileParser alloc]
-                       initWithStream:archive.streamForEmbeddedProfile];
+                       initWithStream:unpacker.streamForEmbeddedProfile];
     }
     PCInfoParser *infoParser = nil;
-    if (archive.streamForInfo) {
+    if (unpacker.streamForInfo) {
       infoParser = [[PCInfoParser alloc]
-                    initWithStream:archive.streamForInfo];
+                    initWithStream:unpacker.streamForInfo];
     }
     if ([profileParser parse:error] && [infoParser parse:error]) {
       PCProfile *profile = profileParser.profile;

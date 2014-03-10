@@ -1,14 +1,14 @@
-#import "PCArchiveUnpacker.h"
+#import "PCPackageUnpacker.h"
 #import <zipzap/zipzap.h>
 
-@interface PCArchiveUnpacker ()
+@interface PCPackageUnpacker ()
 @property ZZArchive *archive;
 @property (readwrite) NSInputStream *streamForEmbeddedProfile;
 @property (readwrite) NSInputStream *streamForInfo;
 @end
 
-@implementation PCArchiveUnpacker
-- (instancetype)initWithArchiveAtURL:(NSURL *)url error:(NSError *__autoreleasing *)error {
+@implementation PCPackageUnpacker
+- (instancetype)initWithPackageAtURL:(NSURL *)url error:(NSError *__autoreleasing *)error {
   if (self = [super init]) {
     ZZArchive *archive = [ZZArchive archiveWithContentsOfURL:url];
     NSError *zipError = nil;
@@ -23,8 +23,8 @@
       if (*error) {
         [userInfo setObject:*error forKey:NSUnderlyingErrorKey];
       }
-      *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
-                                   code:PCArchiveUnpackerErrorCorruptArchive
+      *error = [NSError errorWithDomain:PCPackageUnpackerErrorDomain
+                                   code:PCPackageUnpackerErrorCorruptPackage
                                userInfo:@{NSLocalizedDescriptionKey:
                                             @"The file is not a valid ZIP archive and cannot be parsed."}];
       return nil;

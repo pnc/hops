@@ -1,11 +1,11 @@
 #import <XCTest/XCTest.h>
-#import "PCArchivePreview.h"
+#import "PCPackagePreview.h"
 
-@interface PCArchivePreviewTest : XCTestCase
+@interface PCPackagePreviewTest : XCTestCase
 
 @end
 
-@implementation PCArchivePreviewTest
+@implementation PCPackagePreviewTest
 
 - (void)setUp {
   [super setUp];
@@ -15,11 +15,11 @@
   [super tearDown];
 }
 
-- (void)testRealArchiveTextPreview {
-  NSURL *archive = [[NSBundle bundleForClass:[self class]]
+- (void)testRealPackageTextPreview {
+  NSURL *package = [[NSBundle bundleForClass:[self class]]
                     URLForResource:@"ipa-info-and-profile"
                     withExtension:@"ipa"];
-  PCArchivePreview *preview = [[PCArchivePreview alloc] initWithURL:archive];
+  PCPackagePreview *preview = [[PCPackagePreview alloc] initWithURL:package];
   NSError *error = nil;
   BOOL result = [preview generate:&error];
   XCTAssertTrue(result, @"Expected generation to succeed, instead had error: %@", error);

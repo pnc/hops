@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A2978951841658F002847A3 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E839183303F000A5D813 /* ApplicationServices.framework */; };
 		4A29789818416727002847A3 /* Hops.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AD9CC9B18415FC400B4C900 /* Hops.dylib */; };
-		4A34F9851835C1030084D695 /* PCArchiveUnpacker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */; };
-		4A34F99A1835CF460084D695 /* PCArchivePreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9981835CF460084D695 /* PCArchivePreview.h */; };
+		4A34F9851835C1030084D695 /* PCPackageUnpacker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9831835C1030084D695 /* PCPackageUnpacker.h */; };
+		4A34F99A1835CF460084D695 /* PCPackagePreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9981835CF460084D695 /* PCPackagePreview.h */; };
 		4A46B16618347E3200650C3A /* PCProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16418347E3200650C3A /* PCProfile.h */; };
 		4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16918347EA200650C3A /* PCMutableProfile.h */; };
 		4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E837183303F000A5D813 /* QuickLook.framework */; };
@@ -31,10 +31,10 @@
 		4AC3114018482F6000285CB5 /* PCInfoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3113E18482F6000285CB5 /* PCInfoParser.m */; };
 		4ACBCDCA18CD49A600D9A26F /* ipa-valid-info.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4ACBCDC918CD499D00D9A26F /* ipa-valid-info.ipa */; };
 		4ACBCDCC18CD49C200D9A26F /* ipa-info-and-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4ACBCDCB18CD49C200D9A26F /* ipa-info-and-profile.ipa */; };
-		4AD9CCC018415FE400B4C900 /* PCArchivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9991835CF460084D695 /* PCArchivePreview.m */; };
+		4AD9CCC018415FE400B4C900 /* PCPackagePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9991835CF460084D695 /* PCPackagePreview.m */; };
 		4AD9CCC118415FE400B4C900 /* PCProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16518347E3200650C3A /* PCProfile.m */; };
 		4AD9CCC218415FE400B4C900 /* PCMutableProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16A18347EA200650C3A /* PCMutableProfile.m */; };
-		4AD9CCC318415FE400B4C900 /* PCArchiveUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */; };
+		4AD9CCC318415FE400B4C900 /* PCPackageUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9841835C1030084D695 /* PCPackageUnpacker.m */; };
 		4AD9CCC418415FE400B4C900 /* PCProfileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3E6251833063F008B6924 /* PCProfileParser.m */; };
 		4AD9CCC518415FFB00B4C900 /* Hops.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD9CC9B18415FC400B4C900 /* Hops.dylib */; };
 		4AD9CCC71841601E00B4C900 /* libzipzap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD9CCC61841601E00B4C900 /* libzipzap.a */; };
@@ -44,8 +44,8 @@
 		4AD9CCCB1841605500B4C900 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83B183303F000A5D813 /* CoreServices.framework */; };
 		4AD9CCCC1841605900B4C900 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83D183303F000A5D813 /* CoreFoundation.framework */; };
 		4AD9CCCE1841608B00B4C900 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E83D183303F000A5D813 /* CoreFoundation.framework */; };
-		4AD9CCDB1841618000B4C900 /* PCArchivePreviewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCD81841618000B4C900 /* PCArchivePreviewTest.m */; };
-		4AD9CCDC1841618000B4C900 /* PCArchiveUnpackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCD91841618000B4C900 /* PCArchiveUnpackerTest.m */; };
+		4AD9CCDB1841618000B4C900 /* PCPackagePreviewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCD81841618000B4C900 /* PCPackagePreviewTest.m */; };
+		4AD9CCDC1841618000B4C900 /* PCPackageUnpackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCD91841618000B4C900 /* PCPackageUnpackerTest.m */; };
 		4AD9CCDD1841618000B4C900 /* PCProfileParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9CCDA1841618000B4C900 /* PCProfileParserTest.m */; };
 		4AD9CCE71841621200B4C900 /* ipa-valid-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCE21841621200B4C900 /* ipa-valid-profile.ipa */; };
 		4AD9CCE81841621200B4C900 /* ipa-no-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4AD9CCE31841621200B4C900 /* ipa-no-profile.ipa */; };
@@ -107,12 +107,12 @@
 		4A34F97B1835C0000084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = zipzap/build/Debug/libzipzap.a; sourceTree = "<group>"; };
 		4A34F97D1835C01C0084D695 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		4A34F97F1835C0280084D695 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCArchiveUnpacker.h; sourceTree = "<group>"; };
-		4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchiveUnpacker.m; sourceTree = "<group>"; };
+		4A34F9831835C1030084D695 /* PCPackageUnpacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPackageUnpacker.h; sourceTree = "<group>"; };
+		4A34F9841835C1030084D695 /* PCPackageUnpacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPackageUnpacker.m; sourceTree = "<group>"; };
 		4A34F98E1835C7440084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = "../../Library/Developer/Xcode/DerivedData/Hops-fzrjeswtxiuqnwajjmqrektwaauc/Build/Products/Debug/libzipzap.a"; sourceTree = "<group>"; };
 		4A34F9901835C75F0084D695 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4A34F9981835CF460084D695 /* PCArchivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCArchivePreview.h; sourceTree = "<group>"; };
-		4A34F9991835CF460084D695 /* PCArchivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchivePreview.m; sourceTree = "<group>"; };
+		4A34F9981835CF460084D695 /* PCPackagePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPackagePreview.h; sourceTree = "<group>"; };
+		4A34F9991835CF460084D695 /* PCPackagePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPackagePreview.m; sourceTree = "<group>"; };
 		4A46B1601833116700650C3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4A46B16418347E3200650C3A /* PCProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCProfile.h; sourceTree = "<group>"; };
 		4A46B16518347E3200650C3A /* PCProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCProfile.m; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		4AD9CCA018415FC400B4C900 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4AD9CCA118415FC400B4C900 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4AD9CCC61841601E00B4C900 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = "../../Library/Developer/Xcode/DerivedData/Hops-fgfwgdsrrnqvunagseelsuymjngl/Build/Products/Debug/libzipzap.a"; sourceTree = "<group>"; };
-		4AD9CCD81841618000B4C900 /* PCArchivePreviewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCArchivePreviewTest.m; path = "Hops Tests/PCArchivePreviewTest.m"; sourceTree = "<group>"; };
-		4AD9CCD91841618000B4C900 /* PCArchiveUnpackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCArchiveUnpackerTest.m; path = "Hops Tests/PCArchiveUnpackerTest.m"; sourceTree = "<group>"; };
+		4AD9CCD81841618000B4C900 /* PCPackagePreviewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCPackagePreviewTest.m; path = "Hops Tests/PCPackagePreviewTest.m"; sourceTree = "<group>"; };
+		4AD9CCD91841618000B4C900 /* PCPackageUnpackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCPackageUnpackerTest.m; path = "Hops Tests/PCPackageUnpackerTest.m"; sourceTree = "<group>"; };
 		4AD9CCDA1841618000B4C900 /* PCProfileParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCProfileParserTest.m; path = "Hops Tests/PCProfileParserTest.m"; sourceTree = "<group>"; };
 		4AD9CCDE1841618900B4C900 /* Hops Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Hops Tests-Info.plist"; path = "Hops Tests/Hops Tests-Info.plist"; sourceTree = "<group>"; };
 		4AD9CCDF1841618900B4C900 /* Hops Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Hops Tests-Prefix.pch"; path = "Hops Tests/Hops Tests-Prefix.pch"; sourceTree = "<group>"; };
@@ -207,8 +207,8 @@
 		4A34F97A1835BE120084D695 /* Unpacker */ = {
 			isa = PBXGroup;
 			children = (
-				4A34F9831835C1030084D695 /* PCArchiveUnpacker.h */,
-				4A34F9841835C1030084D695 /* PCArchiveUnpacker.m */,
+				4A34F9831835C1030084D695 /* PCPackageUnpacker.h */,
+				4A34F9841835C1030084D695 /* PCPackageUnpacker.m */,
 			);
 			name = Unpacker;
 			sourceTree = "<group>";
@@ -217,8 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				4AC311281846D67400285CB5 /* Templates */,
-				4A34F9981835CF460084D695 /* PCArchivePreview.h */,
-				4A34F9991835CF460084D695 /* PCArchivePreview.m */,
+				4A34F9981835CF460084D695 /* PCPackagePreview.h */,
+				4A34F9991835CF460084D695 /* PCPackagePreview.m */,
 			);
 			name = Generator;
 			sourceTree = "<group>";
@@ -326,8 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				4AD9CCE1184161D800B4C900 /* Fixtures */,
-				4AD9CCD81841618000B4C900 /* PCArchivePreviewTest.m */,
-				4AD9CCD91841618000B4C900 /* PCArchiveUnpackerTest.m */,
+				4AD9CCD81841618000B4C900 /* PCPackagePreviewTest.m */,
+				4AD9CCD91841618000B4C900 /* PCPackageUnpackerTest.m */,
 				4AD9CCDA1841618000B4C900 /* PCProfileParserTest.m */,
 				4AC3113B18482EBA00285CB5 /* PCInfoParserTest.m */,
 				4AD9CCD71841617400B4C900 /* Supporting Files */,
@@ -383,10 +383,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE3E6261833063F008B6924 /* PCProfileParser.h in Headers */,
-				4A34F99A1835CF460084D695 /* PCArchivePreview.h in Headers */,
+				4A34F99A1835CF460084D695 /* PCPackagePreview.h in Headers */,
 				4A46B16618347E3200650C3A /* PCProfile.h in Headers */,
 				4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */,
-				4A34F9851835C1030084D695 /* PCArchiveUnpacker.h in Headers */,
+				4A34F9851835C1030084D695 /* PCPackageUnpacker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,10 +545,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD9CCC018415FE400B4C900 /* PCArchivePreview.m in Sources */,
+				4AD9CCC018415FE400B4C900 /* PCPackagePreview.m in Sources */,
 				4AD9CCC118415FE400B4C900 /* PCProfile.m in Sources */,
 				4AD9CCC218415FE400B4C900 /* PCMutableProfile.m in Sources */,
-				4AD9CCC318415FE400B4C900 /* PCArchiveUnpacker.m in Sources */,
+				4AD9CCC318415FE400B4C900 /* PCPackageUnpacker.m in Sources */,
 				4AD9CCC418415FE400B4C900 /* PCProfileParser.m in Sources */,
 				4AC3114018482F6000285CB5 /* PCInfoParser.m in Sources */,
 			);
@@ -560,8 +560,8 @@
 			files = (
 				4AD9CCDD1841618000B4C900 /* PCProfileParserTest.m in Sources */,
 				4AC3113C18482EBA00285CB5 /* PCInfoParserTest.m in Sources */,
-				4AD9CCDC1841618000B4C900 /* PCArchiveUnpackerTest.m in Sources */,
-				4AD9CCDB1841618000B4C900 /* PCArchivePreviewTest.m in Sources */,
+				4AD9CCDC1841618000B4C900 /* PCPackageUnpackerTest.m in Sources */,
+				4AD9CCDB1841618000B4C900 /* PCPackagePreviewTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
