@@ -2,6 +2,7 @@
 
 @interface PCInfoParser ()
 @property (readwrite) NSString *bundleDisplayName;
+@property (readwrite) NSString *bundleVersion;
 @property NSInputStream *inputStream;
 @end
 
@@ -27,7 +28,8 @@
   [self.inputStream close];
   if (info) {
     self.bundleDisplayName = [info objectForKey:@"CFBundleDisplayName"];
-    if (self.bundleDisplayName) {
+    self.bundleVersion = [info objectForKey:@"CFBundleVersion"];
+    if (self.bundleDisplayName && self.bundleVersion) {
       return YES;
     } else {
       *error = [NSError

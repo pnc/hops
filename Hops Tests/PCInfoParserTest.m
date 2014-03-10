@@ -43,6 +43,7 @@
 
   XCTAssertTrue(result, @"Expected parsing valid fixture to succeed, instead: %@", error);
   XCTAssertEqualObjects(@"Coatcheck", parser.bundleDisplayName, @"Bundle name incorrect");
+  XCTAssertEqualObjects(@"1.0", parser.bundleVersion, @"Bundle version incorrect");
 }
 
 @end
