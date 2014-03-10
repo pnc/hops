@@ -1,6 +1,8 @@
 #import "PCArchivePreview.h"
 #import "PCArchiveUnpacker.h"
 #import "PCProfileParser.h"
+#import "PCInfoParser.h"
+#import "PCInfo.h"
 #import "PCProfile.h"
 #import <GRMustache.h>
 
@@ -21,11 +23,22 @@
 - (BOOL)generate:(NSError *__autoreleasing *)error {
   PCArchiveUnpacker *archive = [[PCArchiveUnpacker alloc] initWithArchiveAtURL:self.url error:error];
   if (archive) {
-    PCProfileParser *parser = [[PCProfileParser alloc]
-                               initWithStream:archive.streamForEmbeddedProfile];
-    if ([parser parse:error]) {
-      PCProfile *profile = parser.profile;
-      if ([self render:profile withError:error]) {
+    PCProfileParser *profileParser = nil;
+    if (archive.streamForEmbeddedProfile) {
+      profileParser = [[PCProfileParser alloc]
+                       initWithStream:archive.streamForEmbeddedProfile];
+    }
+    PCInfoParser *infoParser = nil;
+    if (archive.streamForInfo) {
+      infoParser = [[PCInfoParser alloc]
+                    initWithStream:archive.streamForInfo];
+    }
+    if ([profileParser parse:error] && [infoParser parse:error]) {
+      PCProfile *profile = profileParser.profile;
+      id <PCInfo> info = infoParser;
+      NSDictionary *application = @{@"profile" : profile,
+                                    @"info" : info};
+      if ([self render:application withError:error]) {
         return YES;
       }
     }
@@ -33,14 +46,14 @@
   return NO;
 }
 
-- (BOOL)render:(PCProfile *)profile withError:(NSError *__autoreleasing *)error {
+- (BOOL)render:(NSDictionary *)application withError:(NSError *__autoreleasing *)error {
   NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-  NSString *plainText = [GRMustacheTemplate renderObject:profile
+  NSString *plainText = [GRMustacheTemplate renderObject:application
                                             fromResource:@"text"
                                                   bundle:bundle
                                                    error:error];
   if (plainText) {
-    NSString *HTML = [GRMustacheTemplate renderObject:profile
+    NSString *HTML = [GRMustacheTemplate renderObject:application
                                          fromResource:@"html"
                                                bundle:bundle
                                                 error:error];

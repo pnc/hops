@@ -9,14 +9,6 @@
 
 @implementation PCProfileParserTest
 
-- (void)setUp {
-  [super setUp];
-}
-
-- (void)tearDown {
-  [super tearDown];
-}
-
 - (void)testEmptyStream {
   NSInputStream *stream = [NSInputStream inputStreamWithData:[NSData data]];
   PCProfileParser *parser = [[PCProfileParser alloc] initWithStream:stream];

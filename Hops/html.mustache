@@ -47,42 +47,42 @@
         list-style-type: none;
       }
     </style>
-    <title>{{name}}</title>
+    <title>{{info.bundleDisplayName}}</title>
   </head>
   <body>
     <header>
-      <h1>{{name}}</h1>
+      <h1>{{info.bundleDisplayName}}</h1>
       <span class="version">1.0.5</span>
     </header>
     <dl class="properties">
       <dt>Application Identifier</dt>
-      <dd>{{applicationIdentifier}}</dd>
-{{#applePushServiceEnvironment}}
+      <dd>{{profile.applicationIdentifier}}</dd>
+{{#profile.applePushServiceEnvironment}}
       <dt>APNS Environment</dt>
-      <dd>{{applePushServiceEnvironment}}</dd>
-{{/applePushServiceEnvironment}}
+      <dd>{{.}}</dd>
+{{/profile.applePushServiceEnvironment}}
       <dt>Debugging Enabled</dt>
-      <dd>{{#getTaskAllow}}Yes{{/getTaskAllow}}{{^getTaskAllow}}No{{/getTaskAllow}}</dd>
-{{#provisionedDevices.count}}
+      <dd>{{#profile.getTaskAllow}}Yes{{/profile.getTaskAllow}}{{^profile.getTaskAllow}}No{{/profile.getTaskAllow}}</dd>
+{{#profile.provisionedDevices.count}}
       <dt>Permitted Devices</dt>
       <dd>
         <ul class="permitted-devices">
-        {{#provisionedDevices}}
+        {{#profile.provisionedDevices}}
           <li>{{.}}</li>
-        {{/provisionedDevices}}
+        {{/profile.provisionedDevices}}
         </ul>
       </dd>
-{{/provisionedDevices.count}}
-{{#keychainAccessGroups.count}}
+{{/profile.provisionedDevices.count}}
+{{#profile.keychainAccessGroups.count}}
       <dt>Keychain Access Groups</dt>
       <dd>
         <ul class="keychain-access-groups">
-        {{#keychainAccessGroups}}
+        {{#profile.keychainAccessGroups}}
           <li>{{.}}</li>
-        {{/keychainAccessGroups}}
+        {{/profile.keychainAccessGroups}}
         </ul>
       </dd>
-{{/keychainAccessGroups.count}}
+{{/profile.keychainAccessGroups.count}}
     </dl>
   </body>
 </html>

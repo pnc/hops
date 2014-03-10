@@ -4,6 +4,7 @@
 @interface PCArchiveUnpacker ()
 @property ZZArchive *archive;
 @property (readwrite) NSInputStream *streamForEmbeddedProfile;
+@property (readwrite) NSInputStream *streamForInfo;
 @end
 
 @implementation PCArchiveUnpacker
@@ -39,18 +40,14 @@
         [@"Payload" isEqual:[path objectAtIndex:0]] &&
         [@"embedded.mobileprovision" isEqual:path.lastObject]) {
       self.streamForEmbeddedProfile = entry.stream;
+    } else if (path.count > 0 &&
+              [@"Payload" isEqual:[path objectAtIndex:0]] &&
+              [@"Info.plist" isEqual:path.lastObject]) {
+      self.streamForInfo = entry.stream;
     } else {
-      NSLog(@"Filename: %@", entry.fileName);
+      NSLog(@"Unrecognized archive file: %@", entry.fileName);
     }
   }
-  if (self.streamForEmbeddedProfile) {
-    return YES;
-  } else {
-    *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
-                                 code:PCArchiveUnpackerErrorNoEmbeddedProfile
-                             userInfo:@{NSLocalizedDescriptionKey:
-                                          @"The file does not contain an embedded provisioning profile."}];
-    return NO;
-  }
+  return YES;
 }
 @end
