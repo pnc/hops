@@ -39,11 +39,11 @@
     if (path.count > 0 &&
         [@"Payload" isEqual:[path objectAtIndex:0]] &&
         [@"embedded.mobileprovision" isEqual:path.lastObject]) {
-      self.streamForEmbeddedProfile = entry.stream;
+      self.streamForEmbeddedProfile = [entry newStreamWithError:nil];
     } else if (path.count > 0 &&
               [@"Payload" isEqual:[path objectAtIndex:0]] &&
               [@"Info.plist" isEqual:path.lastObject]) {
-      self.streamForInfo = entry.stream;
+      self.streamForInfo = [entry newStreamWithError:nil];
     } else {
       NSLog(@"Unrecognized archive file: %@", entry.fileName);
     }
