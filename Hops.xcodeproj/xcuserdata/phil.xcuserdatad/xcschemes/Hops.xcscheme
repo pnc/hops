@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56DEC247152631040031E8DC"
-               BuildableName = "libGRMustache6-MacOS.a"
-               BlueprintName = "GRMustache6-MacOS"
+               BuildableName = "libGRMustache7-MacOS.a"
+               BlueprintName = "GRMustache7-MacOS"
                ReferencedContainer = "container:GRMustache/src/GRMustache.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

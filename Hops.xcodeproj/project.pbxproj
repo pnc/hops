@@ -13,12 +13,12 @@
 		4A34F99A1835CF460084D695 /* PCPackagePreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34F9981835CF460084D695 /* PCPackagePreview.h */; };
 		4A46B16618347E3200650C3A /* PCProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16418347E3200650C3A /* PCProfile.h */; };
 		4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16918347EA200650C3A /* PCMutableProfile.h */; };
+		4A9AE4E2194CE96E00E25E5F /* libGRMustache7-MacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9AE4E1194CE96E00E25E5F /* libGRMustache7-MacOS.a */; };
 		4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E837183303F000A5D813 /* QuickLook.framework */; };
 		4AB2E844183303F000A5D813 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AB2E842183303F000A5D813 /* InfoPlist.strings */; };
 		4AB2E846183303F000A5D813 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2E845183303F000A5D813 /* GenerateThumbnailForURL.m */; };
 		4AB2E848183303F000A5D813 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2E847183303F000A5D813 /* GeneratePreviewForURL.m */; };
 		4AB2E84A183303F000A5D813 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2E849183303F000A5D813 /* main.c */; };
-		4AC3112D1846EF8C00285CB5 /* libGRMustache6-MacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC3112C1846EF8C00285CB5 /* libGRMustache6-MacOS.a */; };
 		4AC3112E18481C3C00285CB5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A46B1601833116700650C3A /* Security.framework */; };
 		4AC3113018481CD400285CB5 /* text.mustache in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AC311291846D69900285CB5 /* text.mustache */; };
 		4AC311331848207700285CB5 /* text.mustache in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4AC311291846D69900285CB5 /* text.mustache */; };
@@ -119,6 +119,7 @@
 		4A46B16918347EA200650C3A /* PCMutableProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMutableProfile.h; sourceTree = "<group>"; };
 		4A46B16A18347EA200650C3A /* PCMutableProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMutableProfile.m; sourceTree = "<group>"; };
 		4A46B170183484B700650C3A /* PCProfileParser_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCProfileParser_Private.h; sourceTree = "<group>"; };
+		4A9AE4E1194CE96E00E25E5F /* libGRMustache7-MacOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGRMustache7-MacOS.a"; path = "../../Library/Developer/Xcode/DerivedData/Hops-fgfwgdsrrnqvunagseelsuymjngl/Build/Products/Debug/libGRMustache7-MacOS.a"; sourceTree = "<group>"; };
 		4AB2E834183303F000A5D813 /* Hops Viewer.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hops Viewer.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB2E837183303F000A5D813 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4AB2E839183303F000A5D813 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -182,8 +183,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9AE4E2194CE96E00E25E5F /* libGRMustache7-MacOS.a in Frameworks */,
 				4AC3112E18481C3C00285CB5 /* Security.framework in Frameworks */,
-				4AC3112D1846EF8C00285CB5 /* libGRMustache6-MacOS.a in Frameworks */,
 				4AD9CCCC1841605900B4C900 /* CoreFoundation.framework in Frameworks */,
 				4AD9CCCB1841605500B4C900 /* CoreServices.framework in Frameworks */,
 				4AD9CCCA1841605000B4C900 /* ApplicationServices.framework in Frameworks */,
@@ -258,6 +259,7 @@
 		4AB2E836183303F000A5D813 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A9AE4E1194CE96E00E25E5F /* libGRMustache7-MacOS.a */,
 				4AC3112C1846EF8C00285CB5 /* libGRMustache6-MacOS.a */,
 				4AC3112A1846EF8600285CB5 /* libGRMustache6-iOS.a */,
 				4AD9CCC61841601E00B4C900 /* libzipzap.a */,
