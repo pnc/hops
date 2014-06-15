@@ -31,7 +31,6 @@
 }
 
 - (BOOL)accessFiles:(NSError *__autoreleasing *)error {
-  NSLog(@"File wrappers: %@", self.wrapper.fileWrappers);
   NSFileWrapper *productsWrapper = [self.wrapper.fileWrappers
                                     objectForKey:@"Products"];
   NSFileWrapper *applicationsWrapper = [productsWrapper.fileWrappers

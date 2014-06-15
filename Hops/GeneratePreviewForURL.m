@@ -29,7 +29,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef request,
                                             kUTTypeHTML,
                                             NULL);
     } else {
-      NSLog(@"Hops: Unable to generate preview for file %@ (%@): %@",
+      NSLog(@"Hops Viewer: Unable to generate preview for file %@ (%@): %@",
             fileURL, fileUTI, error);
     }
   }

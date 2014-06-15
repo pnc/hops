@@ -48,8 +48,6 @@
               [@"Payload" isEqual:[path objectAtIndex:0]] &&
               [@"Info.plist" isEqual:path.lastObject]) {
       self.streamForInfo = [entry newStreamWithError:nil];
-    } else {
-      NSLog(@"Unrecognized archive file: %@", entry.fileName);
     }
   }
   return YES;
