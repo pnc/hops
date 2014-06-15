@@ -14,6 +14,7 @@
 		4A46B16618347E3200650C3A /* PCProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16418347E3200650C3A /* PCProfile.h */; };
 		4A46B16B18347EA200650C3A /* PCMutableProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A46B16918347EA200650C3A /* PCMutableProfile.h */; };
 		4A9AE4E2194CE96E00E25E5F /* libGRMustache7-MacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9AE4E1194CE96E00E25E5F /* libGRMustache7-MacOS.a */; };
+		4A9AE4E6194D40AA00E25E5F /* archive-no-profile.xcarchive in Resources */ = {isa = PBXBuildFile; fileRef = 4A9AE4E5194D40AA00E25E5F /* archive-no-profile.xcarchive */; };
 		4AB2E838183303F000A5D813 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB2E837183303F000A5D813 /* QuickLook.framework */; };
 		4AB2E844183303F000A5D813 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AB2E842183303F000A5D813 /* InfoPlist.strings */; };
 		4AB2E846183303F000A5D813 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2E845183303F000A5D813 /* GenerateThumbnailForURL.m */; };
@@ -31,6 +32,10 @@
 		4AC3114018482F6000285CB5 /* PCInfoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3113E18482F6000285CB5 /* PCInfoParser.m */; };
 		4ACBCDCA18CD49A600D9A26F /* ipa-valid-info.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4ACBCDC918CD499D00D9A26F /* ipa-valid-info.ipa */; };
 		4ACBCDCC18CD49C200D9A26F /* ipa-info-and-profile.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 4ACBCDCB18CD49C200D9A26F /* ipa-info-and-profile.ipa */; };
+		4ACBCDCE18CD561400D9A26F /* PCArchiveUnpackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACBCDCD18CD561400D9A26F /* PCArchiveUnpackerTest.m */; };
+		4ACBCDD118CD572600D9A26F /* PCArchiveUnpacker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACBCDCF18CD572600D9A26F /* PCArchiveUnpacker.h */; };
+		4ACBCDD218CD572600D9A26F /* PCArchiveUnpacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACBCDD018CD572600D9A26F /* PCArchiveUnpacker.m */; };
+		4ACBCDD418CD5FE100D9A26F /* archive-corrupt.xcarchive in Resources */ = {isa = PBXBuildFile; fileRef = 4ACBCDD318CD5FE100D9A26F /* archive-corrupt.xcarchive */; };
 		4AD9CCC018415FE400B4C900 /* PCPackagePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F9991835CF460084D695 /* PCPackagePreview.m */; };
 		4AD9CCC118415FE400B4C900 /* PCProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16518347E3200650C3A /* PCProfile.m */; };
 		4AD9CCC218415FE400B4C900 /* PCMutableProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A46B16A18347EA200650C3A /* PCMutableProfile.m */; };
@@ -120,6 +125,7 @@
 		4A46B16A18347EA200650C3A /* PCMutableProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMutableProfile.m; sourceTree = "<group>"; };
 		4A46B170183484B700650C3A /* PCProfileParser_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCProfileParser_Private.h; sourceTree = "<group>"; };
 		4A9AE4E1194CE96E00E25E5F /* libGRMustache7-MacOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGRMustache7-MacOS.a"; path = "../../Library/Developer/Xcode/DerivedData/Hops-fgfwgdsrrnqvunagseelsuymjngl/Build/Products/Debug/libGRMustache7-MacOS.a"; sourceTree = "<group>"; };
+		4A9AE4E5194D40AA00E25E5F /* archive-no-profile.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "archive-no-profile.xcarchive"; sourceTree = "<group>"; };
 		4AB2E834183303F000A5D813 /* Hops Viewer.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hops Viewer.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB2E837183303F000A5D813 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4AB2E839183303F000A5D813 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -143,6 +149,10 @@
 		4AC31145184839FD00285CB5 /* PCInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCInfo.h; sourceTree = "<group>"; };
 		4ACBCDC918CD499D00D9A26F /* ipa-valid-info.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-valid-info.ipa"; sourceTree = "<group>"; };
 		4ACBCDCB18CD49C200D9A26F /* ipa-info-and-profile.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ipa-info-and-profile.ipa"; sourceTree = "<group>"; };
+		4ACBCDCD18CD561400D9A26F /* PCArchiveUnpackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCArchiveUnpackerTest.m; path = "Hops Tests/PCArchiveUnpackerTest.m"; sourceTree = "<group>"; };
+		4ACBCDCF18CD572600D9A26F /* PCArchiveUnpacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCArchiveUnpacker.h; sourceTree = "<group>"; };
+		4ACBCDD018CD572600D9A26F /* PCArchiveUnpacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCArchiveUnpacker.m; sourceTree = "<group>"; };
+		4ACBCDD318CD5FE100D9A26F /* archive-corrupt.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "archive-corrupt.xcarchive"; sourceTree = "<group>"; };
 		4AD9CC9B18415FC400B4C900 /* Hops.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Hops.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD9CC9C18415FC400B4C900 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4AD9CC9F18415FC400B4C900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -210,6 +220,8 @@
 			children = (
 				4A34F9831835C1030084D695 /* PCPackageUnpacker.h */,
 				4A34F9841835C1030084D695 /* PCPackageUnpacker.m */,
+				4ACBCDCF18CD572600D9A26F /* PCArchiveUnpacker.h */,
+				4ACBCDD018CD572600D9A26F /* PCArchiveUnpacker.m */,
 			);
 			name = Unpacker;
 			sourceTree = "<group>";
@@ -330,6 +342,7 @@
 				4AD9CCE1184161D800B4C900 /* Fixtures */,
 				4AD9CCD81841618000B4C900 /* PCPackagePreviewTest.m */,
 				4AD9CCD91841618000B4C900 /* PCPackageUnpackerTest.m */,
+				4ACBCDCD18CD561400D9A26F /* PCArchiveUnpackerTest.m */,
 				4AD9CCDA1841618000B4C900 /* PCProfileParserTest.m */,
 				4AC3113B18482EBA00285CB5 /* PCInfoParserTest.m */,
 				4AD9CCD71841617400B4C900 /* Supporting Files */,
@@ -350,6 +363,8 @@
 		4AD9CCE1184161D800B4C900 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				4ACBCDD318CD5FE100D9A26F /* archive-corrupt.xcarchive */,
+				4A9AE4E5194D40AA00E25E5F /* archive-no-profile.xcarchive */,
 				4AC3113718482E1300285CB5 /* info-plist-valid.plist */,
 				4AC3113918482E5D00285CB5 /* info-plist-missing-bundle-name.plist */,
 				4ACBCDCB18CD49C200D9A26F /* ipa-info-and-profile.ipa */,
@@ -397,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC3113F18482F6000285CB5 /* PCInfoParser.h in Headers */,
+				4ACBCDD118CD572600D9A26F /* PCArchiveUnpacker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,11 +523,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC3113818482E1300285CB5 /* info-plist-valid.plist in Resources */,
+				4A9AE4E6194D40AA00E25E5F /* archive-no-profile.xcarchive in Resources */,
 				4AD9CCEA1841621200B4C900 /* plist-root-array.plist in Resources */,
 				4ACBCDCA18CD49A600D9A26F /* ipa-valid-info.ipa in Resources */,
 				4ACBCDCC18CD49C200D9A26F /* ipa-info-and-profile.ipa in Resources */,
 				4AD9CCEE1841631E00B4C900 /* InfoPlist.strings in Resources */,
 				4AC3113A18482E5D00285CB5 /* info-plist-missing-bundle-name.plist in Resources */,
+				4ACBCDD418CD5FE100D9A26F /* archive-corrupt.xcarchive in Resources */,
 				4AD9CCF0184163CD00B4C900 /* profile-valid.mobileprovision in Resources */,
 				4AD9CCE71841621200B4C900 /* ipa-valid-profile.ipa in Resources */,
 				4AD9CCE91841621200B4C900 /* ipa-corrupt.ipa in Resources */,
@@ -552,6 +570,7 @@
 				4AD9CCC218415FE400B4C900 /* PCMutableProfile.m in Sources */,
 				4AD9CCC318415FE400B4C900 /* PCPackageUnpacker.m in Sources */,
 				4AD9CCC418415FE400B4C900 /* PCProfileParser.m in Sources */,
+				4ACBCDD218CD572600D9A26F /* PCArchiveUnpacker.m in Sources */,
 				4AC3114018482F6000285CB5 /* PCInfoParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACBCDCE18CD561400D9A26F /* PCArchiveUnpackerTest.m in Sources */,
 				4AD9CCDD1841618000B4C900 /* PCProfileParserTest.m in Sources */,
 				4AC3113C18482EBA00285CB5 /* PCInfoParserTest.m in Sources */,
 				4AD9CCDC1841618000B4C900 /* PCPackageUnpackerTest.m in Sources */,
