@@ -113,6 +113,7 @@
 /* Begin PBXFileReference section */
 		4A1774DF194E213F005906EB /* archive-valid-profile.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "archive-valid-profile.xcarchive"; sourceTree = "<group>"; };
 		4A1774E1194E2454005906EB /* archive-valid-info.xcarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "archive-valid-info.xcarchive"; sourceTree = "<group>"; };
+		4A1774E3194E26EA005906EB /* PCApplicationUnpacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCApplicationUnpacker.h; sourceTree = "<group>"; };
 		4A34F97B1835C0000084D695 /* libzipzap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzipzap.a; path = zipzap/build/Debug/libzipzap.a; sourceTree = "<group>"; };
 		4A34F97D1835C01C0084D695 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		4A34F97F1835C0280084D695 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -226,6 +227,7 @@
 				4A34F9841835C1030084D695 /* PCPackageUnpacker.m */,
 				4ACBCDCF18CD572600D9A26F /* PCArchiveUnpacker.h */,
 				4ACBCDD018CD572600D9A26F /* PCArchiveUnpacker.m */,
+				4A1774E3194E26EA005906EB /* PCApplicationUnpacker.h */,
 			);
 			name = Unpacker;
 			sourceTree = "<group>";

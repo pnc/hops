@@ -1,3 +1,4 @@
+#import "PCApplicationUnpacker.h"
 #import "PCPackagePreview.h"
 #import "PCPackageUnpacker.h"
 #import "PCProfileParser.h"
@@ -21,7 +22,7 @@
 }
 
 - (BOOL)generate:(NSError *__autoreleasing *)error {
-  PCPackageUnpacker *unpacker = [[PCPackageUnpacker alloc] initWithPackageAtURL:self.url error:error];
+  id <PCApplicationUnpacker> unpacker = [[PCPackageUnpacker alloc] initWithPackageAtURL:self.url error:error];
   if (unpacker) {
     PCProfileParser *profileParser = nil;
     if (unpacker.streamForEmbeddedProfile) {

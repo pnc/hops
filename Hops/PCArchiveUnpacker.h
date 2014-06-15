@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "PCApplicationUnpacker.h"
 
 typedef NS_ENUM(NSInteger, PCArchiveUnpackerError) {
   PCArchiveUnpackerErrorUnknown = 9000,
@@ -7,9 +8,6 @@ typedef NS_ENUM(NSInteger, PCArchiveUnpackerError) {
 
 static NSString* const PCArchiveUnpackerErrorDomain = @"PCArchiveUnpackerErrorDomain";
 
-@interface PCArchiveUnpacker : NSObject
-@property (readonly) NSInputStream *streamForEmbeddedProfile;
-@property (readonly) NSInputStream *streamForInfo;
-
+@interface PCArchiveUnpacker : NSObject <PCApplicationUnpacker>
 - (instancetype)initWithArchiveAtURL:(NSURL *)url error:(NSError *__autoreleasing *)error;
 @end
