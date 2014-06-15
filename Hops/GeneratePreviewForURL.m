@@ -14,9 +14,12 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
    ----------------------------------------------------------------------------- */
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef request, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options) {
-  PCApplicationPreview *preview = [[PCApplicationPreview alloc]
-                                   initWithURL:(__bridge NSURL *)(url)];
   @autoreleasepool {
+    NSURL *fileURL = (__bridge NSURL *)(url);
+    NSString *fileUTI = (__bridge NSString *)(contentTypeUTI);
+    PCApplicationPreview *preview = [[PCApplicationPreview alloc]
+                                     initWithURL:fileURL
+                                     contentUTI:fileUTI];
     NSError *error = nil;
     BOOL result = [preview generate:&error];
     if (result) {
@@ -26,7 +29,8 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef request,
                                             kUTTypeHTML,
                                             NULL);
     } else {
-      NSLog(@"Hops: Unable to generate preview for IPA: %@", error);
+      NSLog(@"Hops: Unable to generate preview for file %@ (%@): %@",
+            fileURL, fileUTI, error);
     }
   }
   return noErr;

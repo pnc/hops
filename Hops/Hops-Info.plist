@@ -12,6 +12,7 @@
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>com.apple.itunes.ipa</string>
+				<string>com.apple.xcode.archive</string>
 			</array>
 		</dict>
 	</array>
