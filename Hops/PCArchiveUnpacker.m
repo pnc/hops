@@ -47,13 +47,15 @@
                                            objectForKey:@"embedded.mobileprovision"];
   if (productsWrapper && applicationsWrapper && applicationWrapper) {
     if (mobileProvisionWrapper) {
-      NSLog(@"Filename: %@", mobileProvisionWrapper.filename);
+      NSData *mobileProvision = [mobileProvisionWrapper regularFileContents];
+      self.streamForEmbeddedProfile = [NSInputStream inputStreamWithData:mobileProvision];
     } else {
       *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
                                    code:PCArchiveUnpackerErrorMissingProfile
                                userInfo:@{NSLocalizedDescriptionKey:
                                             @"The file does not contain an embedded provisioning profile."}];
     }
+    return YES;
   } else {
     // This will happen if the file moves before we have
     // a chance to read it, which is unlikely.
@@ -61,8 +63,8 @@
                                  code:PCArchiveUnpackerErrorCorruptPackage
                              userInfo:@{NSLocalizedDescriptionKey:
                                           @"The file is a bundle, but not an application archive."}];
+    return NO;
   }
-  return NO;
 }
 
 @end
