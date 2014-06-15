@@ -32,9 +32,9 @@
                     withExtension:@"xcarchive"];
   NSError *error = nil;
   PCArchiveUnpacker *unpacker = [[PCArchiveUnpacker alloc] initWithArchiveAtURL:archive error:&error];
-  XCTAssertNil(unpacker, @"Expected no unpacker result");
-  XCTAssertEqual(error.code, PCArchiveUnpackerErrorMissingProfile,
-                 @"Expected a missing profile error");
+  XCTAssertNotNil(unpacker, @"Expected no unpacker result");
+  XCTAssertNil(unpacker.streamForEmbeddedProfile,
+                 @"Expected a nil profile stream");
 }
 
 - (void)testArchiveWithEmbeddedProfile {
@@ -51,5 +51,21 @@
   NSInteger result = [stream read:buffer maxLength:8];
   XCTAssert(result > 0, @"Expected nonzero-length profile stream");
 }
+
+- (void)testArchiveWithInfo {
+  NSURL *archive = [[NSBundle bundleForClass:[self class]]
+                    URLForResource:@"archive-valid-info"
+                    withExtension:@"xcarchive"];
+  NSError *error = nil;
+  PCArchiveUnpacker *unpacker = [[PCArchiveUnpacker alloc] initWithArchiveAtURL:archive error:&error];
+  XCTAssertNotNil(unpacker, @"Expected a package, had error: %@", error);
+  NSInputStream *stream = [unpacker streamForInfo];
+  XCTAssertNotNil(stream, @"Expected an info stream, had error: %@", error);
+  [stream open];
+  uint8_t buffer[8];
+  NSInteger result = [stream read:buffer maxLength:8];
+  XCTAssert(result > 0, @"Expected nonzero-length info stream");
+}
+
 
 @end

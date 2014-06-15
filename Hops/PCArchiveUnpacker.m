@@ -45,15 +45,16 @@
   }
   NSFileWrapper *mobileProvisionWrapper = [applicationWrapper.fileWrappers
                                            objectForKey:@"embedded.mobileprovision"];
+  NSFileWrapper *infoWrapper = [applicationWrapper.fileWrappers
+                                objectForKey:@"Info.plist"];
   if (productsWrapper && applicationsWrapper && applicationWrapper) {
     if (mobileProvisionWrapper) {
       NSData *mobileProvision = [mobileProvisionWrapper regularFileContents];
       self.streamForEmbeddedProfile = [NSInputStream inputStreamWithData:mobileProvision];
-    } else {
-      *error = [NSError errorWithDomain:PCArchiveUnpackerErrorDomain
-                                   code:PCArchiveUnpackerErrorMissingProfile
-                               userInfo:@{NSLocalizedDescriptionKey:
-                                            @"The file does not contain an embedded provisioning profile."}];
+    }
+    if (infoWrapper) {
+      NSData *info = [infoWrapper regularFileContents];
+      self.streamForInfo = [NSInputStream inputStreamWithData:info];
     }
     return YES;
   } else {
