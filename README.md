@@ -1,6 +1,6 @@
 ## Hops
 
-Hops lets you view compiled iPhone applications in Quick Look.
+Hops lets you preview compiled iOS applications in Quick Look.
 
 ![Screenshot showing Quick Look preview of an iPhone application called Coatcheck, version 1.0, listing the application identifier, the push message environment, debugging, a list of permitted devices, and keychain access groups](http://f.cl.ly/items/04242J2K17370j0w3A15/Screen%20Shot%202014-06-15%20at%2016.28.32.png)
 
