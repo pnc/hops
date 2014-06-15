@@ -20,13 +20,17 @@
       return nil;
     } else {
       NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-      if (*error) {
-        [userInfo setObject:*error forKey:NSUnderlyingErrorKey];
+      [userInfo
+       setObject:@"The file is not a valid ZIP archive and cannot be parsed."
+       forKey:NSLocalizedDescriptionKey];
+      if (zipError) {
+        [userInfo setObject:zipError forKey:NSUnderlyingErrorKey];
       }
-      *error = [NSError errorWithDomain:PCPackageUnpackerErrorDomain
-                                   code:PCPackageUnpackerErrorCorruptPackage
-                               userInfo:@{NSLocalizedDescriptionKey:
-                                            @"The file is not a valid ZIP archive and cannot be parsed."}];
+      if (error) {
+        *error = [NSError errorWithDomain:PCPackageUnpackerErrorDomain
+                                     code:PCPackageUnpackerErrorCorruptPackage
+                                 userInfo:userInfo];
+      }
       return nil;
     }
   }
