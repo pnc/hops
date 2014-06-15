@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface PCPackagePreview : NSObject
+@interface PCApplicationPreview : NSObject
 @property (readonly) NSString *plainText;
 @property (readonly) NSString *HTML;
 - (instancetype)initWithURL:(NSURL *)url;

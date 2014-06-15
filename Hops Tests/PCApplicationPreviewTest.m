@@ -1,11 +1,11 @@
 #import <XCTest/XCTest.h>
-#import "PCPackagePreview.h"
+#import "PCApplicationPreview.h"
 
-@interface PCPackagePreviewTest : XCTestCase
+@interface PCApplicationPreviewTest : XCTestCase
 
 @end
 
-@implementation PCPackagePreviewTest
+@implementation PCApplicationPreviewTest
 
 - (void)setUp {
   [super setUp];
@@ -19,7 +19,7 @@
   NSURL *package = [[NSBundle bundleForClass:[self class]]
                     URLForResource:@"ipa-info-and-profile"
                     withExtension:@"ipa"];
-  PCPackagePreview *preview = [[PCPackagePreview alloc] initWithURL:package];
+  PCApplicationPreview *preview = [[PCApplicationPreview alloc] initWithURL:package];
   NSError *error = nil;
   BOOL result = [preview generate:&error];
   XCTAssertTrue(result, @"Expected generation to succeed, instead had error: %@", error);

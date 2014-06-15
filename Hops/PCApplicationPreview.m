@@ -1,5 +1,5 @@
 #import "PCApplicationUnpacker.h"
-#import "PCPackagePreview.h"
+#import "PCApplicationPreview.h"
 #import "PCPackageUnpacker.h"
 #import "PCProfileParser.h"
 #import "PCInfoParser.h"
@@ -7,13 +7,13 @@
 #import "PCProfile.h"
 #import <GRMustache.h>
 
-@interface PCPackagePreview ()
+@interface PCApplicationPreview ()
 @property NSURL *url;
 @property (readwrite) NSString *plainText;
 @property (readwrite) NSString *HTML;
 @end
 
-@implementation PCPackagePreview
+@implementation PCApplicationPreview
 - (instancetype)initWithURL:(NSURL *)url {
   if (self = [super init]) {
     self.url = url;
