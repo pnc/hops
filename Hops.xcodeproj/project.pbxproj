@@ -67,6 +67,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4A1774E7194E410C005906EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AB2E82A183303F000A5D813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD9CC9A18415FC400B4C900;
+			remoteInfo = Hops;
+		};
 		4AE3E61E183305CC008B6924 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4AB2E82A183303F000A5D813 /* Project object */;
@@ -445,6 +452,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A1774E8194E410C005906EB /* PBXTargetDependency */,
 			);
 			name = "Hops Viewer";
 			productName = Hops;
@@ -604,6 +612,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4A1774E8194E410C005906EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD9CC9A18415FC400B4C900 /* Hops */;
+			targetProxy = 4A1774E7194E410C005906EB /* PBXContainerItemProxy */;
+		};
 		4AE3E61F183305CC008B6924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4AB2E833183303F000A5D813 /* Hops Viewer */;
